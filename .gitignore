@@ -1,0 +1,8 @@
+.env
+config.yaml
+__pycache__/
+
+# 개인 자료 — 팀 저장소(공개)에 올리지 않는다
+CLAUDE.md
+대회 안내자료/
+API 참고자료/
