@@ -1,0 +1,41 @@
+{
+  "symbol": "A066C000",
+  "bar_minutes": 5,
+  "bollinger": {
+    "n": 20,
+    "k": 2.0,
+    "std_ddof": 0,
+    "carry_over": true
+  },
+  "entry": "prev_close outside band AND close back inside band, at bar close",
+  "entry_window_close_time": [
+    "09:00",
+    "15:25"
+  ],
+  "force_exit_time": "15:25",
+  "exit": "middle band",
+  "take_profit_ticks": null,
+  "stop_ticks": 77,
+  "daily_loss_limit_krw": 154000.0,
+  "oi_filter_bars": 1,
+  "contracts": 1,
+  "basis": {
+    "source": "week02/results/bars_A066C000_5m_20260911_20261009.json",
+    "selection_period": [
+      "20260911",
+      "20261009"
+    ],
+    "days": 17,
+    "atr_n": 14,
+    "atr_median_ticks": 38.36,
+    "stop_k": 2.0,
+    "loss_stops": 2
+  },
+  "checks": {
+    "signals_per_day": 4.71,
+    "median_dist_to_mid_ticks": 70.9,
+    "cost_ticks": 2,
+    "target_to_stop": 0.92
+  },
+  "fixed_at": "2026-10-24T22:35:16"
+}
