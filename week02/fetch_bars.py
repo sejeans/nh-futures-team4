@@ -50,9 +50,13 @@ def chart_client():
 
 
 def load(path, minutes):
-    """저장된 응답(한 건 또는 목록) → 봉 DataFrame. 표기 시각 = 봉 시작 시각 (params_bollinger.ipynb 1-1)"""
+    """저장된 응답(한 건 또는 목록) → 봉 DataFrame"""
     rec = json.loads(path.read_text(encoding="utf-8"))
-    occ = [o for r in (rec if isinstance(rec, list) else [rec]) for o in (r["response"].get("Occurs1") or [])]
+    return parse([o for r in (rec if isinstance(rec, list) else [rec]) for o in (r["response"].get("Occurs1") or [])], minutes)
+
+
+def parse(occ, minutes):
+    """chart-minute Occurs1 → 봉 DataFrame. 표기 시각 = 봉 시작 시각 (params_bollinger.ipynb 1-1)"""
     b = (pd.DataFrame(occ)
          .rename(columns=lambda c: c.removeprefix("occurs1_"))
          .assign(t=lambda d: pd.to_datetime(d.ref_dt + d.exch_tm, format="%Y%m%d%H%M%S"))
