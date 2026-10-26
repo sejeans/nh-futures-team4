@@ -130,7 +130,8 @@ class NH:
                 time.sleep(BACKOFF[attempt])
                 continue
             if status != 200:
-                raise NHError(f"HTTP {status} {path} {res.get('msg_cd', '')} {res.get('msg_cntn', '')}".strip())
+                raise NHError(f"HTTP {status} {path} {res.get('errorCode') or res.get('msg_cd', '')} "
+                              f"{res.get('errorMessage') or res.get('msg_cntn', '')}".strip())
             return res
         raise NHError(f"{path}: {RETRIES}회 재시도 후 실패")
 
@@ -185,8 +186,9 @@ class NH:
         return None
 
     # --- 주문 ---
-    def order(self, side, qty=1, sym=SYM, exec_cnd="3"):
-        """시장가 신규주문. side +1 매수 / -1 매도. exec_cnd 3=FAK (시장가 FOK 는 거부 5039, 운영안내 22p)"""
+    def order(self, side, qty=1, sym=SYM, exec_cnd="1"):
+        """시장가 신규주문. side +1 매수 / -1 매도. exec_cnd 1=FAS
+        (시장가는 FOK·FAK 둘 다 거부 5039 — 10/26 실측. 운영안내 22p 는 FOK 만 적혀 있음)"""
         res = self.call("/trade/v1/domestic/order", {
             "sym": sym, "trd_div": "1" if side > 0 else "2", "ord_tp_cd": "2",
             "ord_qty": str(qty), "ord_pric": "0", "exec_cnd_cd": exec_cnd})

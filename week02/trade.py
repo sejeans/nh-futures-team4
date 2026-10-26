@@ -21,7 +21,7 @@ ENTRY_FROM, ENTRY_UNTIL = P["entry_window_close_time"]
 EXIT_AT = P["force_exit_time"]
 STOP_TICKS = P["stop_ticks"]
 LOSS_LIMIT = P["daily_loss_limit_krw"]
-FEE_KRW = 0     # 1계약 주문 1회당 수수료. 10/26 manual_roundtrip.py 실측값으로 바꾼다
+FEE_RATE = 2393 / ((1221.0 + 1220.3) * MULT)  # 10/26 수동 왕복 실측: 수수료 2,393원 ÷ 거래금액 (≈0.0098%)
 POLL_LAG = 5    # 분이 바뀌고 몇 초 뒤 판정할지 (봉 확정 대기)
 
 
@@ -117,7 +117,7 @@ def main():
         sys.exit("NH_ENV=paper 에서만 실행한다")
     pos, entry = nh.position()
     pnl = realized_today()
-    journal("start", pos=pos, entry=entry, pnl_today=pnl, stop_ticks=STOP_TICKS, loss_limit=LOSS_LIMIT, fee=FEE_KRW)
+    journal("start", pos=pos, entry=entry, pnl_today=pnl, stop_ticks=STOP_TICKS, loss_limit=LOSS_LIMIT, fee_rate=FEE_RATE)
 
     while True:
         boundary = wait_next_minute()
@@ -142,8 +142,8 @@ def main():
                 pos, entry, fill = send(nh, -sign(prev_pos), abs(prev_pos), act[1])
                 if pos == 0:
                     exit_px = fill["px"] if fill and fill["px"] else px
-                    gain = round((exit_px - prev_entry) * sign(prev_pos) * abs(prev_pos) * MULT
-                                 - 2 * FEE_KRW * abs(prev_pos))
+                    gain = round(((exit_px - prev_entry) * sign(prev_pos) - (exit_px + prev_entry) * FEE_RATE)
+                                 * abs(prev_pos) * MULT)
                     pnl += gain
                     journal("exit", reason=act[1], side=sign(prev_pos), entry=prev_entry, exit=exit_px,
                             pnl=gain, pnl_today=pnl)
