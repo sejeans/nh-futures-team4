@@ -1,0 +1,14 @@
+{"ts": "2026-10-27T08:50:02", "event": "start", "pos": 0, "entry": null, "pnl_today": 0, "stop_ticks": 77, "loss_limit": 154000.0, "fee_rate": 9.802154589767746e-05}
+{"ts": "2026-10-27T09:25:16", "event": "order", "why": "진입", "side": -1, "qty": 1, "ord_no": "0000000144", "msg": "", "book": {"ask": "1261.20", "bid": "1260.90"}}
+{"ts": "2026-10-27T09:25:17", "event": "fill", "ord_no": "0000000144", "fill": {"qty": 1.0, "px": 1261.1, "status": "체결", "time": "092516004", "reject": ""}, "pos": -1, "avg": 1261.1}
+{"ts": "2026-10-27T09:25:17", "event": "enter", "side": -1, "entry": 1261.1, "pos": -1}
+{"ts": "2026-10-27T09:36:05", "event": "order", "why": "손절", "side": 1, "qty": 1, "ord_no": "0000000218", "msg": "", "book": {"ask": "1269.20", "bid": "1269.00"}}
+{"ts": "2026-10-27T09:36:06", "event": "fill", "ord_no": "0000000218", "fill": {"qty": 1.0, "px": 1269.1, "status": "체결", "time": "093605362", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-27T09:36:06", "event": "exit", "reason": "손절", "side": -1, "entry": 1261.1, "exit": 1269.1, "pnl": -82480, "pnl_today": -82480}
+{"ts": "2026-10-27T11:30:05", "event": "order", "why": "진입", "side": 1, "qty": 1, "ord_no": "0000000787", "msg": "", "book": {"ask": "1262.80", "bid": "1262.60"}}
+{"ts": "2026-10-27T11:30:06", "event": "fill", "ord_no": "0000000787", "fill": {"qty": 1.0, "px": 1262.8, "status": "체결", "time": "113005419", "reject": ""}, "pos": 1, "avg": 1262.8}
+{"ts": "2026-10-27T11:30:06", "event": "enter", "side": 1, "entry": 1262.8, "pos": 1}
+{"ts": "2026-10-27T11:39:05", "event": "order", "why": "손절", "side": -1, "qty": 1, "ord_no": "0000000815", "msg": "", "book": {"ask": "1252.90", "bid": "1252.70"}}
+{"ts": "2026-10-27T11:39:06", "event": "fill", "ord_no": "0000000815", "fill": {"qty": 1.0, "px": 1252.7, "status": "체결", "time": "113905367", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-27T11:39:06", "event": "exit", "reason": "손절", "side": 1, "entry": 1262.8, "exit": 1252.7, "pnl": -103466, "pnl_today": -185946}
+{"ts": "2026-10-27T15:25:05", "event": "end", "why": "15:25", "pnl_today": -185946}
