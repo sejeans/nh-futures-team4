@@ -12,3 +12,29 @@
 {"ts": "2026-10-27T11:39:06", "event": "fill", "ord_no": "0000000815", "fill": {"qty": 1.0, "px": 1252.7, "status": "체결", "time": "113905367", "reject": ""}, "pos": 0, "avg": null}
 {"ts": "2026-10-27T11:39:06", "event": "exit", "reason": "손절", "side": 1, "entry": 1262.8, "exit": 1252.7, "pnl": -103466, "pnl_today": -185946}
 {"ts": "2026-10-27T15:25:05", "event": "end", "why": "15:25", "pnl_today": -185946}
+{"ts": "2026-10-28T08:50:02", "event": "start", "pos": 0, "entry": null, "pnl_today": 0, "stop_ticks": 77, "loss_limit": 154000.0, "fee_rate": 9.802154589767746e-05}
+{"ts": "2026-10-28T09:20:16", "event": "order", "why": "진입", "side": -1, "qty": 1, "ord_no": "0000000149", "msg": "", "book": {"ask": "1285.60", "bid": "1285.40"}}
+{"ts": "2026-10-28T09:20:17", "event": "fill", "ord_no": "0000000149", "fill": {"qty": 1.0, "px": 1285.4, "status": "체결", "time": "092015972", "reject": ""}, "pos": -1, "avg": 1285.4}
+{"ts": "2026-10-28T09:20:17", "event": "enter", "side": -1, "entry": 1285.4, "pos": -1}
+{"ts": "2026-10-28T09:45:05", "event": "order", "why": "손절", "side": 1, "qty": 1, "ord_no": "0000000286", "msg": "", "book": {"ask": "1293.20", "bid": "1293.00"}}
+{"ts": "2026-10-28T09:45:07", "event": "fill", "ord_no": "0000000286", "fill": {"qty": 1.0, "px": 1293.0, "status": "체결", "time": "094505823", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-28T09:45:07", "event": "exit", "reason": "손절", "side": -1, "entry": 1285.4, "exit": 1293.0, "pnl": -78527, "pnl_today": -78527}
+{"ts": "2026-10-28T11:30:05", "event": "order", "why": "진입", "side": 1, "qty": 1, "ord_no": "0000000685", "msg": "", "book": {"ask": "1281.10", "bid": "1280.80"}}
+{"ts": "2026-10-28T11:30:06", "event": "fill", "ord_no": "0000000685", "fill": {"qty": 1.0, "px": 1281.0, "status": "체결", "time": "113005580", "reject": ""}, "pos": 1, "avg": 1281.0}
+{"ts": "2026-10-28T11:30:06", "event": "enter", "side": 1, "entry": 1281.0, "pos": 1}
+{"ts": "2026-10-28T11:50:05", "event": "order", "why": "중심선", "side": -1, "qty": 1, "ord_no": "0000000744", "msg": "", "book": {"ask": "1287.30", "bid": "1287.10"}}
+{"ts": "2026-10-28T11:50:07", "event": "fill", "ord_no": "0000000744", "fill": {"qty": 1.0, "px": 1287.1, "status": "체결", "time": "115005697", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-28T11:50:07", "event": "exit", "reason": "중심선", "side": 1, "entry": 1281.0, "exit": 1287.1, "pnl": 58483, "pnl_today": -20044}
+{"ts": "2026-10-28T13:20:05", "event": "order", "why": "진입", "side": -1, "qty": 1, "ord_no": "0000000936", "msg": "", "book": {"ask": "1285.80", "bid": "1285.60"}}
+{"ts": "2026-10-28T13:20:06", "event": "fill", "ord_no": "0000000936", "fill": {"qty": 1.0, "px": 1285.6, "status": "체결", "time": "132005625", "reject": ""}, "pos": -1, "avg": 1285.6}
+{"ts": "2026-10-28T13:20:06", "event": "enter", "side": -1, "entry": 1285.6, "pos": -1}
+{"ts": "2026-10-28T13:40:05", "event": "order", "why": "중심선", "side": 1, "qty": 1, "ord_no": "0000000968", "msg": "", "book": {"ask": "1280.10", "bid": "1280.00"}}
+{"ts": "2026-10-28T13:40:06", "event": "fill", "ord_no": "0000000968", "fill": {"qty": 1.0, "px": 1280.2, "status": "체결", "time": "134005693", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-28T13:40:06", "event": "exit", "reason": "중심선", "side": -1, "entry": 1285.6, "exit": 1280.2, "pnl": 51485, "pnl_today": 31441}
+{"ts": "2026-10-28T14:35:05", "event": "order", "why": "진입", "side": -1, "qty": 1, "ord_no": "0000001076", "msg": "", "book": {"ask": "1287.90", "bid": "1287.80"}}
+{"ts": "2026-10-28T14:35:06", "event": "fill", "ord_no": "0000001076", "fill": {"qty": 1.0, "px": 1287.8, "status": "체결", "time": "143505481", "reject": ""}, "pos": -1, "avg": 1287.8}
+{"ts": "2026-10-28T14:35:06", "event": "enter", "side": -1, "entry": 1287.8, "pos": -1}
+{"ts": "2026-10-28T14:45:05", "event": "order", "why": "중심선", "side": 1, "qty": 1, "ord_no": "0000001121", "msg": "", "book": {"ask": "1283.40", "bid": "1283.30"}}
+{"ts": "2026-10-28T14:45:06", "event": "fill", "ord_no": "0000001121", "fill": {"qty": 1.0, "px": 1283.4, "status": "체결", "time": "144505539", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-28T14:45:06", "event": "exit", "reason": "중심선", "side": -1, "entry": 1287.8, "exit": 1283.4, "pnl": 41480, "pnl_today": 72921}
+{"ts": "2026-10-28T15:25:05", "event": "end", "why": "15:25", "pnl_today": 72921}
