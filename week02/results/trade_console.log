@@ -55,3 +55,20 @@ Already up to date.
 {"ts": "2026-10-29T14:55:06", "event": "fill", "ord_no": "0000001398", "fill": {"qty": 1.0, "px": 1260.7, "status": "체결", "time": "145505579", "reject": ""}, "pos": 0, "avg": null}
 {"ts": "2026-10-29T14:55:06", "event": "exit", "reason": "중심선", "side": -1, "entry": 1264.7, "exit": 1260.7, "pnl": 37525, "pnl_today": -50953}
 {"ts": "2026-10-29T15:25:05", "event": "end", "why": "15:25", "pnl_today": -50953}
+[2026-10-30  8:50:00.96] git pull 
+Already up to date.
+8722270 week02: 당일 봉 20개 전 진입 금지 (10/29부터), 10/28 차트, README, run_trade.bat git pull
+{"ts": "2026-10-30T08:50:04", "event": "start", "pos": 0, "entry": null, "pnl_today": 0, "stop_ticks": 77, "loss_limit": 154000.0, "fee_rate": 9.802154589767746e-05}
+{"ts": "2026-10-30T12:35:05", "event": "order", "why": "진입", "side": -1, "qty": 1, "ord_no": "0000000911", "msg": "", "book": {"ask": "1208.20", "bid": "1208.00"}}
+{"ts": "2026-10-30T12:35:06", "event": "fill", "ord_no": "0000000911", "fill": {"qty": 1.0, "px": 1208.0, "status": "체결", "time": "123505565", "reject": ""}, "pos": -1, "avg": 1208.0}
+{"ts": "2026-10-30T12:35:06", "event": "enter", "side": -1, "entry": 1208.0, "pos": -1}
+{"ts": "2026-10-30T13:05:05", "event": "order", "why": "중심선", "side": 1, "qty": 1, "ord_no": "0000000958", "msg": "", "book": {"ask": "1203.10", "bid": "1202.90"}}
+{"ts": "2026-10-30T13:05:07", "event": "fill", "ord_no": "0000000958", "fill": {"qty": 1.0, "px": 1203.0, "status": "체결", "time": "130505658", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-30T13:05:07", "event": "exit", "reason": "중심선", "side": -1, "entry": 1208.0, "exit": 1203.0, "pnl": 47637, "pnl_today": 47637}
+{"ts": "2026-10-30T15:00:05", "event": "order", "why": "진입", "side": 1, "qty": 1, "ord_no": "0000001186", "msg": "", "book": {"ask": "1198.90", "bid": "1198.70"}}
+{"ts": "2026-10-30T15:00:07", "event": "fill", "ord_no": "0000001186", "fill": {"qty": 1.0, "px": 1199.0, "status": "체결", "time": "150005769", "reject": ""}, "pos": 1, "avg": 1199.0}
+{"ts": "2026-10-30T15:00:07", "event": "enter", "side": 1, "entry": 1199.0, "pos": 1}
+{"ts": "2026-10-30T15:25:06", "event": "order", "why": "15:25", "side": -1, "qty": 1, "ord_no": "0000001235", "msg": "", "book": {"ask": "1202.60", "bid": "1202.40"}}
+{"ts": "2026-10-30T15:25:07", "event": "fill", "ord_no": "0000001235", "fill": {"qty": 1.0, "px": 1202.4, "status": "체결", "time": "152506657", "reject": ""}, "pos": 0, "avg": null}
+{"ts": "2026-10-30T15:25:07", "event": "exit", "reason": "15:25", "side": 1, "entry": 1199.0, "exit": 1202.4, "pnl": 31646, "pnl_today": 79283}
+{"ts": "2026-10-30T15:25:07", "event": "end", "why": "15:25", "pnl_today": 79283}
