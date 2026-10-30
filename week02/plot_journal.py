@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from fetch_bars import RESULTS, SYM, chart_client, load
-from strategy import MULT, P, TICK, bollinger
+from strategy import MULT, P, TICK, WARMUP, bollinger
 
 ENTRY_UNTIL = P["entry_window_close_time"][1]
 LOSS_LIMIT = P["daily_loss_limit_krw"]
@@ -38,6 +38,7 @@ def bars5(days):
     sd = b5.close.rolling(n).std(ddof=ddof)
     b5["up"], b5["lo"] = b5.mid + k * sd, b5.mid - k * sd
     b5["entry"] = bollinger(b5).entry.values
+    b5["raw"] = bollinger(b5, warmup=1).entry.values  # 당일 봉 대기 조건이 없었다면 나왔을 신호
     b5 = b5.set_index("close_t")
     return b5
 
@@ -176,6 +177,9 @@ def main_simple(day):
     ticks, trades, start = load_journal(day)
     assert {en["ts"].replace(second=0) for en, _ in trades} <= set(b.index[b.entry != 0]), "저널 진입이 신호와 다르다"
     _, skipped = explain(b5, b, ticks, trades, start)
+    skipped += [(t, int(r.raw), f"당일 봉 {WARMUP}개 전 (10/29부터 진입 안 함)")
+                for t, r in b[(b.raw != 0) & (b.entry == 0)].iterrows()]
+    skipped.sort(key=lambda s: s[0])
     d = pd.Timestamp(day)
 
     fig, (ax, tx) = plt.subplots(2, 1, figsize=(13, 6.2 + 0.24 * (len(trades) + len(skipped))),
@@ -199,7 +203,8 @@ def main_simple(day):
                     bbox=dict(fc="white", ec="none", pad=0.5, alpha=0.85))
         why = "하단 밴드 아래 → 안 복귀" if en["side"] > 0 else "상단 밴드 위 → 안 복귀"
         lines.append(f"{NUM[i]} {en['ts']:%H:%M} {why} → {name} {en['entry']:.1f}   "
-                     f"{ex['ts']:%H:%M} {ex['reason']} → 청산 {ex['exit']:.1f}   {moved:+d}틱, 수수료 포함 {ex['pnl']:+,}원")
+                     f"{ex['ts']:%H:%M} {'운영 종료' if ex['reason'] == '15:25' else ex['reason']} → 청산 {ex['exit']:.1f}   "
+                     f"{moved:+d}틱, 수수료 포함 {ex['pnl']:+,}원")
     for t, side, why in skipped:
         ax.scatter(t, b.loc[t].close, marker=SIDE[side][2], s=60, facecolor="white", edgecolor=SIDE[side][1], lw=1.2, zorder=4)
         lines.append(f"△ {t:%H:%M} {SIDE[side][0]} 신호 미진입: {why}")
@@ -215,7 +220,7 @@ def main_simple(day):
     ax.set_title(f"{d:%m/%d}   {len(trades)}회, {win}승 {len(trades) - win}패, 수수료 포함 {total:+,}원 "
                  f"(가격손익 {gross:+,.0f}원)", loc="left", fontsize=11)
     handles = [plt.Line2D([], [], color=c, marker=m, lw=2, label=f"{n} 진입") for n, c, m in SIDE.values()]
-    handles += [plt.Line2D([], [], color=MUTED, marker="o", lw=0, label="중심선 청산"),
+    handles += [plt.Line2D([], [], color=MUTED, marker="o", lw=0, label="중심선/15:25 청산"),
                 plt.Line2D([], [], color=MUTED, marker="X", lw=0, label="손절 청산"),
                 plt.Line2D([], [], color=MUTED, marker="^", mfc="white", lw=0, label="신호 미진입"),
                 plt.Line2D([], [], color=MUTED, ls=(0, (3, 2)), label=f"손절선 ({P['stop_ticks']}틱, 보유 중에만)"),
