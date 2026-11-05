@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-11-01T20:28:14",
+ "fee_usd": 0.0,
+ "slip_ticks": 1,
+ "max_cost_share": 0.2,
+ "params": {
+  "5": {
+   "bar_minutes": 5,
+   "atr_median_ticks": 1.93,
+   "stop_ticks": 4,
+   "daily_loss_limit_usd": 125.0,
+   "signals_per_day": 13.06,
+   "median_dist_to_mid_ticks": 2.4,
+   "cost_share": 0.833
+  },
+  "10": {
+   "bar_minutes": 10,
+   "atr_median_ticks": 2.71,
+   "stop_ticks": 5,
+   "daily_loss_limit_usd": 156.25,
+   "signals_per_day": 5.77,
+   "median_dist_to_mid_ticks": 3.62,
+   "cost_share": 0.552
+  },
+  "15": {
+   "bar_minutes": 15,
+   "atr_median_ticks": 3.21,
+   "stop_ticks": 6,
+   "daily_loss_limit_usd": 187.5,
+   "signals_per_day": 3.6,
+   "median_dist_to_mid_ticks": 4.38,
+   "cost_share": 0.457
+  },
+  "30": {
+   "bar_minutes": 30,
+   "atr_median_ticks": 4.61,
+   "stop_ticks": 9,
+   "daily_loss_limit_usd": 281.25,
+   "signals_per_day": 1.34,
+   "median_dist_to_mid_ticks": 7.0,
+   "cost_share": 0.286
+  }
+ },
+ "chosen": null,
+ "runs": {
+  "5분_선택": {
+   "거래": 110,
+   "하루거래": 2.68,
+   "승률": 0.182,
+   "손익_usd": -2875.0,
+   "평균이익_usd": 31.25,
+   "평균손실_usd": -38.89,
+   "최대낙폭_usd": -2875.0,
+   "청산사유": {
+    "신호": 73,
+    "손절": 37
+   },
+   "손익분기_왕복수수료_usd": -26.14,
+   "시간대별": {
+    "아시아": {
+     "거래": 90,
+     "손익_usd": -2671.88
+    },
+    "런던": {
+     "거래": 20,
+     "손익_usd": -203.12
+    },
+    "미국": {
+     "거래": 0,
+     "손익_usd": 0
+    }
+   }
+  },
+  "5분_검증": {
+   "거래": 26,
+   "하루거래": 2.17,
+   "승률": 0.192,
+   "손익_usd": -953.12,
+   "평균이익_usd": 50.0,
+   "평균손실_usd": -57.29,
+   "최대낙폭_usd": -953.12,
+   "청산사유": {
+    "손절": 14,
+    "신호": 12
+   },
+   "손익분기_왕복수수료_usd": -36.66,
+   "시간대별": {
+    "아시아": {
+     "거래": 23,
+     "손익_usd": -921.88
+    },
+    "런던": {
+     "거래": 3,
+     "손익_usd": -31.25
+    },
+    "미국": {
+     "거래": 0,
+     "손익_usd": 0
+    }
+   }
+  }
+ }
+}

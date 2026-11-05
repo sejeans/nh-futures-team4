@@ -1,0 +1,25 @@
+{
+ "event_ZN": {
+  "days": 34,
+  "range_median_ticks": 6.5,
+  "move_median_ticks": 7.5,
+  "cost_share_vs_move": 0.267
+ },
+ "curve_FYT": {
+  "ratio": {
+   "ZF": 3,
+   "ZN": -2
+  },
+  "beta_dZN_dZF": 1.341,
+  "cost_usd_roundtrip": 109.375,
+  "signals_per_day": 13.68,
+  "dist_to_mid_median_usd": 19.14,
+  "cost_share": 5.714
+ },
+ "event_curve_FYT": {
+  "days": 34,
+  "move_median_usd": 42.97,
+  "cost_share_vs_move": 2.545
+ },
+ "max_cost_share": 0.2
+}

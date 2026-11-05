@@ -1,0 +1,1535 @@
+{
+ "called_at": "2026-11-05T17:08:59",
+ "data": [
+  {
+   "occurs1_ref_dt": "20261105",
+   "occurs1_open_pric": "105.023437500",
+   "occurs1_high_pric": "105.234375000",
+   "occurs1_low_pric": "105.015625000",
+   "occurs1_close_pric": "105.085937500",
+   "occurs1_rt": "0.05",
+   "occurs1_diff_rt": "0.054687500",
+   "occurs1_cum_trd_qty": "179556"
+  },
+  {
+   "occurs1_ref_dt": "20261104",
+   "occurs1_open_pric": "104.718750000",
+   "occurs1_high_pric": "105.109375000",
+   "occurs1_low_pric": "104.718750000",
+   "occurs1_close_pric": "105.031250000",
+   "occurs1_rt": "0.22",
+   "occurs1_diff_rt": "0.226562500",
+   "occurs1_cum_trd_qty": "1850703"
+  },
+  {
+   "occurs1_ref_dt": "20261103",
+   "occurs1_open_pric": "104.921875000",
+   "occurs1_high_pric": "105.054687500",
+   "occurs1_low_pric": "104.710937500",
+   "occurs1_close_pric": "104.804687500",
+   "occurs1_rt": "-0.19",
+   "occurs1_diff_rt": "-0.195312500",
+   "occurs1_cum_trd_qty": "1262124"
+  },
+  {
+   "occurs1_ref_dt": "20261102",
+   "occurs1_open_pric": "104.882812500",
+   "occurs1_high_pric": "105.093750000",
+   "occurs1_low_pric": "104.781250000",
+   "occurs1_close_pric": "105.000000000",
+   "occurs1_rt": "0.10",
+   "occurs1_diff_rt": "0.101562500",
+   "occurs1_cum_trd_qty": "1380050"
+  },
+  {
+   "occurs1_ref_dt": "20261030",
+   "occurs1_open_pric": "104.789062500",
+   "occurs1_high_pric": "105.015625000",
+   "occurs1_low_pric": "104.718750000",
+   "occurs1_close_pric": "104.898437500",
+   "occurs1_rt": "0.34",
+   "occurs1_diff_rt": "0.351562500",
+   "occurs1_cum_trd_qty": "2585959"
+  },
+  {
+   "occurs1_ref_dt": "20261029",
+   "occurs1_open_pric": "104.351562500",
+   "occurs1_high_pric": "104.843750000",
+   "occurs1_low_pric": "104.289062500",
+   "occurs1_close_pric": "104.546875000",
+   "occurs1_rt": "0.26",
+   "occurs1_diff_rt": "0.273437500",
+   "occurs1_cum_trd_qty": "1760662"
+  },
+  {
+   "occurs1_ref_dt": "20261028",
+   "occurs1_open_pric": "104.343750000",
+   "occurs1_high_pric": "104.492187500",
+   "occurs1_low_pric": "104.109375000",
+   "occurs1_close_pric": "104.273437500",
+   "occurs1_rt": "-0.09",
+   "occurs1_diff_rt": "-0.093750000",
+   "occurs1_cum_trd_qty": "1649989"
+  },
+  {
+   "occurs1_ref_dt": "20261027",
+   "occurs1_open_pric": "104.414062500",
+   "occurs1_high_pric": "104.546875000",
+   "occurs1_low_pric": "104.312500000",
+   "occurs1_close_pric": "104.367187500",
+   "occurs1_rt": "-0.06",
+   "occurs1_diff_rt": "-0.062500000",
+   "occurs1_cum_trd_qty": "1277563"
+  },
+  {
+   "occurs1_ref_dt": "20261026",
+   "occurs1_open_pric": "104.476562500",
+   "occurs1_high_pric": "104.609375000",
+   "occurs1_low_pric": "104.367187500",
+   "occurs1_close_pric": "104.429687500",
+   "occurs1_rt": "-0.07",
+   "occurs1_diff_rt": "-0.078125000",
+   "occurs1_cum_trd_qty": "1058514"
+  },
+  {
+   "occurs1_ref_dt": "20261023",
+   "occurs1_open_pric": "104.632812500",
+   "occurs1_high_pric": "104.679687500",
+   "occurs1_low_pric": "104.406250000",
+   "occurs1_close_pric": "104.507812500",
+   "occurs1_rt": "-0.16",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "1662278"
+  },
+  {
+   "occurs1_ref_dt": "20261022",
+   "occurs1_open_pric": "103.890625000",
+   "occurs1_high_pric": "104.750000000",
+   "occurs1_low_pric": "103.890625000",
+   "occurs1_close_pric": "104.671875000",
+   "occurs1_rt": "0.84",
+   "occurs1_diff_rt": "0.867187500",
+   "occurs1_cum_trd_qty": "2244927"
+  },
+  {
+   "occurs1_ref_dt": "20261021",
+   "occurs1_open_pric": "103.968750000",
+   "occurs1_high_pric": "104.117187500",
+   "occurs1_low_pric": "103.765625000",
+   "occurs1_close_pric": "103.804687500",
+   "occurs1_rt": "-0.14",
+   "occurs1_diff_rt": "-0.140625000",
+   "occurs1_cum_trd_qty": "1297124"
+  },
+  {
+   "occurs1_ref_dt": "20261020",
+   "occurs1_open_pric": "103.929687500",
+   "occurs1_high_pric": "104.164062500",
+   "occurs1_low_pric": "103.882812500",
+   "occurs1_close_pric": "103.945312500",
+   "occurs1_rt": "-0.03",
+   "occurs1_diff_rt": "-0.031250000",
+   "occurs1_cum_trd_qty": "1285287"
+  },
+  {
+   "occurs1_ref_dt": "20261019",
+   "occurs1_open_pric": "104.218750000",
+   "occurs1_high_pric": "104.312500000",
+   "occurs1_low_pric": "103.882812500",
+   "occurs1_close_pric": "103.976562500",
+   "occurs1_rt": "-0.11",
+   "occurs1_diff_rt": "-0.117187500",
+   "occurs1_cum_trd_qty": "1148318"
+  },
+  {
+   "occurs1_ref_dt": "20261016",
+   "occurs1_open_pric": "104.156250000",
+   "occurs1_high_pric": "104.242187500",
+   "occurs1_low_pric": "103.906250000",
+   "occurs1_close_pric": "104.093750000",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "1666925"
+  },
+  {
+   "occurs1_ref_dt": "20261015",
+   "occurs1_open_pric": "103.710937500",
+   "occurs1_high_pric": "104.375000000",
+   "occurs1_low_pric": "103.687500000",
+   "occurs1_close_pric": "104.093750000",
+   "occurs1_rt": "0.37",
+   "occurs1_diff_rt": "0.382812500",
+   "occurs1_cum_trd_qty": "2708866"
+  },
+  {
+   "occurs1_ref_dt": "20261014",
+   "occurs1_open_pric": "103.664062500",
+   "occurs1_high_pric": "103.804687500",
+   "occurs1_low_pric": "103.031250000",
+   "occurs1_close_pric": "103.710937500",
+   "occurs1_rt": "0.05",
+   "occurs1_diff_rt": "0.054687500",
+   "occurs1_cum_trd_qty": "2393444"
+  },
+  {
+   "occurs1_ref_dt": "20261013",
+   "occurs1_open_pric": "103.570312500",
+   "occurs1_high_pric": "103.851562500",
+   "occurs1_low_pric": "103.570312500",
+   "occurs1_close_pric": "103.656250000",
+   "occurs1_rt": "0.09",
+   "occurs1_diff_rt": "0.093750000",
+   "occurs1_cum_trd_qty": "1312165"
+  },
+  {
+   "occurs1_ref_dt": "20261012",
+   "occurs1_open_pric": "103.601562500",
+   "occurs1_high_pric": "103.664062500",
+   "occurs1_low_pric": "103.484375000",
+   "occurs1_close_pric": "103.562500000",
+   "occurs1_rt": "-0.03",
+   "occurs1_diff_rt": "-0.031250000",
+   "occurs1_cum_trd_qty": "383871"
+  },
+  {
+   "occurs1_ref_dt": "20261009",
+   "occurs1_open_pric": "103.718750000",
+   "occurs1_high_pric": "103.796875000",
+   "occurs1_low_pric": "103.476562500",
+   "occurs1_close_pric": "103.593750000",
+   "occurs1_rt": "-0.13",
+   "occurs1_diff_rt": "-0.132812500",
+   "occurs1_cum_trd_qty": "1276208"
+  },
+  {
+   "occurs1_ref_dt": "20261008",
+   "occurs1_open_pric": "103.593750000",
+   "occurs1_high_pric": "103.781250000",
+   "occurs1_low_pric": "103.328125000",
+   "occurs1_close_pric": "103.726562500",
+   "occurs1_rt": "0.11",
+   "occurs1_diff_rt": "0.109375000",
+   "occurs1_cum_trd_qty": "1677368"
+  },
+  {
+   "occurs1_ref_dt": "20261007",
+   "occurs1_open_pric": "103.546875000",
+   "occurs1_high_pric": "103.656250000",
+   "occurs1_low_pric": "103.281250000",
+   "occurs1_close_pric": "103.617187500",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.039062500",
+   "occurs1_cum_trd_qty": "1441986"
+  },
+  {
+   "occurs1_ref_dt": "20261006",
+   "occurs1_open_pric": "103.453125000",
+   "occurs1_high_pric": "103.656250000",
+   "occurs1_low_pric": "103.382812500",
+   "occurs1_close_pric": "103.578125000",
+   "occurs1_rt": "0.17",
+   "occurs1_diff_rt": "0.171875000",
+   "occurs1_cum_trd_qty": "1349137"
+  },
+  {
+   "occurs1_ref_dt": "20261005",
+   "occurs1_open_pric": "103.421875000",
+   "occurs1_high_pric": "103.601562500",
+   "occurs1_low_pric": "103.281250000",
+   "occurs1_close_pric": "103.406250000",
+   "occurs1_rt": "-0.03",
+   "occurs1_diff_rt": "-0.031250000",
+   "occurs1_cum_trd_qty": "1505782"
+  },
+  {
+   "occurs1_ref_dt": "20261002",
+   "occurs1_open_pric": "103.617187500",
+   "occurs1_high_pric": "104.093750000",
+   "occurs1_low_pric": "103.343750000",
+   "occurs1_close_pric": "103.437500000",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.218750000",
+   "occurs1_cum_trd_qty": "2536318"
+  },
+  {
+   "occurs1_ref_dt": "20261001",
+   "occurs1_open_pric": "103.304687500",
+   "occurs1_high_pric": "103.828125000",
+   "occurs1_low_pric": "103.109375000",
+   "occurs1_close_pric": "103.656250000",
+   "occurs1_rt": "0.35",
+   "occurs1_diff_rt": "0.359375000",
+   "occurs1_cum_trd_qty": "2450032"
+  },
+  {
+   "occurs1_ref_dt": "20260930",
+   "occurs1_open_pric": "103.468750000",
+   "occurs1_high_pric": "103.648437500",
+   "occurs1_low_pric": "103.257812500",
+   "occurs1_close_pric": "103.296875000",
+   "occurs1_rt": "-0.11",
+   "occurs1_diff_rt": "-0.117187500",
+   "occurs1_cum_trd_qty": "2714166"
+  },
+  {
+   "occurs1_ref_dt": "20260929",
+   "occurs1_open_pric": "103.335937500",
+   "occurs1_high_pric": "103.492187500",
+   "occurs1_low_pric": "103.187500000",
+   "occurs1_close_pric": "103.414062500",
+   "occurs1_rt": "0.05",
+   "occurs1_diff_rt": "0.046875000",
+   "occurs1_cum_trd_qty": "1974044"
+  },
+  {
+   "occurs1_ref_dt": "20260928",
+   "occurs1_open_pric": "103.632812500",
+   "occurs1_high_pric": "103.640625000",
+   "occurs1_low_pric": "103.226562500",
+   "occurs1_close_pric": "103.367187500",
+   "occurs1_rt": "-0.26",
+   "occurs1_diff_rt": "-0.265625000",
+   "occurs1_cum_trd_qty": "1839031"
+  },
+  {
+   "occurs1_ref_dt": "20260925",
+   "occurs1_open_pric": "103.390625000",
+   "occurs1_high_pric": "103.757812500",
+   "occurs1_low_pric": "103.382812500",
+   "occurs1_close_pric": "103.632812500",
+   "occurs1_rt": "0.08",
+   "occurs1_diff_rt": "0.078125000",
+   "occurs1_cum_trd_qty": "2127369"
+  },
+  {
+   "occurs1_ref_dt": "20260924",
+   "occurs1_open_pric": "103.578125000",
+   "occurs1_high_pric": "103.796875000",
+   "occurs1_low_pric": "103.296875000",
+   "occurs1_close_pric": "103.554687500",
+   "occurs1_rt": "-0.03",
+   "occurs1_diff_rt": "-0.031250000",
+   "occurs1_cum_trd_qty": "2657749"
+  },
+  {
+   "occurs1_ref_dt": "20260923",
+   "occurs1_open_pric": "104.265625000",
+   "occurs1_high_pric": "104.406250000",
+   "occurs1_low_pric": "103.445312500",
+   "occurs1_close_pric": "103.585937500",
+   "occurs1_rt": "-0.63",
+   "occurs1_diff_rt": "-0.656250000",
+   "occurs1_cum_trd_qty": "2341302"
+  },
+  {
+   "occurs1_ref_dt": "20260922",
+   "occurs1_open_pric": "104.281250000",
+   "occurs1_high_pric": "104.453125000",
+   "occurs1_low_pric": "104.156250000",
+   "occurs1_close_pric": "104.242187500",
+   "occurs1_rt": "-0.02",
+   "occurs1_diff_rt": "-0.023437500",
+   "occurs1_cum_trd_qty": "1641828"
+  },
+  {
+   "occurs1_ref_dt": "20260921",
+   "occurs1_open_pric": "104.117187500",
+   "occurs1_high_pric": "104.406250000",
+   "occurs1_low_pric": "104.109375000",
+   "occurs1_close_pric": "104.265625000",
+   "occurs1_rt": "0.08",
+   "occurs1_diff_rt": "0.085937500",
+   "occurs1_cum_trd_qty": "1143785"
+  },
+  {
+   "occurs1_ref_dt": "20260918",
+   "occurs1_open_pric": "104.500000000",
+   "occurs1_high_pric": "104.539062500",
+   "occurs1_low_pric": "104.109375000",
+   "occurs1_close_pric": "104.179687500",
+   "occurs1_rt": "-0.24",
+   "occurs1_diff_rt": "-0.250000000",
+   "occurs1_cum_trd_qty": "1496936"
+  },
+  {
+   "occurs1_ref_dt": "20260917",
+   "occurs1_open_pric": "104.125000000",
+   "occurs1_high_pric": "104.515625000",
+   "occurs1_low_pric": "104.117187500",
+   "occurs1_close_pric": "104.429687500",
+   "occurs1_rt": "0.20",
+   "occurs1_diff_rt": "0.210937500",
+   "occurs1_cum_trd_qty": "1516341"
+  },
+  {
+   "occurs1_ref_dt": "20260916",
+   "occurs1_open_pric": "104.351562500",
+   "occurs1_high_pric": "104.679687500",
+   "occurs1_low_pric": "104.109375000",
+   "occurs1_close_pric": "104.218750000",
+   "occurs1_rt": "-0.14",
+   "occurs1_diff_rt": "-0.148437500",
+   "occurs1_cum_trd_qty": "2194581"
+  },
+  {
+   "occurs1_ref_dt": "20260915",
+   "occurs1_open_pric": "104.382812500",
+   "occurs1_high_pric": "104.445312500",
+   "occurs1_low_pric": "104.203125000",
+   "occurs1_close_pric": "104.367187500",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.156250000",
+   "occurs1_cum_trd_qty": "1347585"
+  },
+  {
+   "occurs1_ref_dt": "20260914",
+   "occurs1_open_pric": "104.531250000",
+   "occurs1_high_pric": "104.671875000",
+   "occurs1_low_pric": "104.312500000",
+   "occurs1_close_pric": "104.523437500",
+   "occurs1_rt": "0.01",
+   "occurs1_diff_rt": "0.015625000",
+   "occurs1_cum_trd_qty": "1790395"
+  },
+  {
+   "occurs1_ref_dt": "20260911",
+   "occurs1_open_pric": "104.632812500",
+   "occurs1_high_pric": "104.843750000",
+   "occurs1_low_pric": "104.398437500",
+   "occurs1_close_pric": "104.507812500",
+   "occurs1_rt": "-0.25",
+   "occurs1_diff_rt": "-0.257812500",
+   "occurs1_cum_trd_qty": "2255821"
+  },
+  {
+   "occurs1_ref_dt": "20260910",
+   "occurs1_open_pric": "105.257812500",
+   "occurs1_high_pric": "105.335937500",
+   "occurs1_low_pric": "104.625000000",
+   "occurs1_close_pric": "104.765625000",
+   "occurs1_rt": "-0.48",
+   "occurs1_diff_rt": "-0.507812500",
+   "occurs1_cum_trd_qty": "2147897"
+  },
+  {
+   "occurs1_ref_dt": "20260909",
+   "occurs1_open_pric": "105.476562500",
+   "occurs1_high_pric": "105.500000000",
+   "occurs1_low_pric": "105.226562500",
+   "occurs1_close_pric": "105.273437500",
+   "occurs1_rt": "-0.16",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "1274064"
+  },
+  {
+   "occurs1_ref_dt": "20260908",
+   "occurs1_open_pric": "105.468750000",
+   "occurs1_high_pric": "105.625000000",
+   "occurs1_low_pric": "105.398437500",
+   "occurs1_close_pric": "105.437500000",
+   "occurs1_rt": "-0.10",
+   "occurs1_diff_rt": "-0.101562500",
+   "occurs1_cum_trd_qty": "1426360"
+  },
+  {
+   "occurs1_ref_dt": "20260907",
+   "occurs1_open_pric": "105.531250000",
+   "occurs1_high_pric": "105.585937500",
+   "occurs1_low_pric": "105.437500000",
+   "occurs1_close_pric": "105.539062500",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "190700"
+  },
+  {
+   "occurs1_ref_dt": "20260904",
+   "occurs1_open_pric": "105.664062500",
+   "occurs1_high_pric": "105.789062500",
+   "occurs1_low_pric": "105.375000000",
+   "occurs1_close_pric": "105.539062500",
+   "occurs1_rt": "-0.16",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "1453813"
+  },
+  {
+   "occurs1_ref_dt": "20260903",
+   "occurs1_open_pric": "105.578125000",
+   "occurs1_high_pric": "105.859375000",
+   "occurs1_low_pric": "105.562500000",
+   "occurs1_close_pric": "105.703125000",
+   "occurs1_rt": "0.19",
+   "occurs1_diff_rt": "0.195312500",
+   "occurs1_cum_trd_qty": "1370478"
+  },
+  {
+   "occurs1_ref_dt": "20260902",
+   "occurs1_open_pric": "105.500000000",
+   "occurs1_high_pric": "105.648437500",
+   "occurs1_low_pric": "105.421875000",
+   "occurs1_close_pric": "105.507812500",
+   "occurs1_rt": "0.01",
+   "occurs1_diff_rt": "0.015625000",
+   "occurs1_cum_trd_qty": "1249109"
+  },
+  {
+   "occurs1_ref_dt": "20260901",
+   "occurs1_open_pric": "105.734375000",
+   "occurs1_high_pric": "105.734375000",
+   "occurs1_low_pric": "105.484375000",
+   "occurs1_close_pric": "105.492187500",
+   "occurs1_rt": "-0.20",
+   "occurs1_diff_rt": "-0.210937500",
+   "occurs1_cum_trd_qty": "1359344"
+  },
+  {
+   "occurs1_ref_dt": "20260831",
+   "occurs1_open_pric": "105.750000000",
+   "occurs1_high_pric": "105.937500000",
+   "occurs1_low_pric": "105.679687500",
+   "occurs1_close_pric": "105.703125000",
+   "occurs1_rt": "-0.10",
+   "occurs1_diff_rt": "-0.101562500",
+   "occurs1_cum_trd_qty": "1869930"
+  },
+  {
+   "occurs1_ref_dt": "20260828",
+   "occurs1_open_pric": "106.179687500",
+   "occurs1_high_pric": "106.296875000",
+   "occurs1_low_pric": "105.765625000",
+   "occurs1_close_pric": "105.804687500",
+   "occurs1_rt": "-0.37",
+   "occurs1_diff_rt": "-0.390625000",
+   "occurs1_cum_trd_qty": "2165575"
+  },
+  {
+   "occurs1_ref_dt": "20260827",
+   "occurs1_open_pric": "106.304687500",
+   "occurs1_high_pric": "106.335937500",
+   "occurs1_low_pric": "106.156250000",
+   "occurs1_close_pric": "106.195312500",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.046875000",
+   "occurs1_cum_trd_qty": "2020395"
+  },
+  {
+   "occurs1_ref_dt": "20260826",
+   "occurs1_open_pric": "106.437500000",
+   "occurs1_high_pric": "106.476562500",
+   "occurs1_low_pric": "106.203125000",
+   "occurs1_close_pric": "106.242187500",
+   "occurs1_rt": "-0.12",
+   "occurs1_diff_rt": "-0.132812500",
+   "occurs1_cum_trd_qty": "2427247"
+  },
+  {
+   "occurs1_ref_dt": "20260825",
+   "occurs1_open_pric": "106.156250000",
+   "occurs1_high_pric": "106.484375000",
+   "occurs1_low_pric": "106.070312500",
+   "occurs1_close_pric": "106.375000000",
+   "occurs1_rt": "0.22",
+   "occurs1_diff_rt": "0.234375000",
+   "occurs1_cum_trd_qty": "3232032"
+  },
+  {
+   "occurs1_ref_dt": "20260824",
+   "occurs1_open_pric": "106.062500000",
+   "occurs1_high_pric": "106.195312500",
+   "occurs1_low_pric": "106.054687500",
+   "occurs1_close_pric": "106.140625000",
+   "occurs1_rt": "0.07",
+   "occurs1_diff_rt": "0.078125000",
+   "occurs1_cum_trd_qty": "2099006"
+  },
+  {
+   "occurs1_ref_dt": "20260821",
+   "occurs1_open_pric": "106.203125000",
+   "occurs1_high_pric": "106.304687500",
+   "occurs1_low_pric": "106.023437500",
+   "occurs1_close_pric": "106.062500000",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.156250000",
+   "occurs1_cum_trd_qty": "1021633"
+  },
+  {
+   "occurs1_ref_dt": "20260820",
+   "occurs1_open_pric": "106.398437500",
+   "occurs1_high_pric": "106.437500000",
+   "occurs1_low_pric": "106.156250000",
+   "occurs1_close_pric": "106.218750000",
+   "occurs1_rt": "-0.11",
+   "occurs1_diff_rt": "-0.117187500",
+   "occurs1_cum_trd_qty": "559651"
+  },
+  {
+   "occurs1_ref_dt": "20260819",
+   "occurs1_open_pric": "106.304687500",
+   "occurs1_high_pric": "106.515625000",
+   "occurs1_low_pric": "106.226562500",
+   "occurs1_close_pric": "106.335937500",
+   "occurs1_rt": "0.03",
+   "occurs1_diff_rt": "0.031250000",
+   "occurs1_cum_trd_qty": "192886"
+  },
+  {
+   "occurs1_ref_dt": "20260818",
+   "occurs1_open_pric": "106.273437500",
+   "occurs1_high_pric": "106.328125000",
+   "occurs1_low_pric": "106.140625000",
+   "occurs1_close_pric": "106.304687500",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.046875000",
+   "occurs1_cum_trd_qty": "111612"
+  },
+  {
+   "occurs1_ref_dt": "20260817",
+   "occurs1_open_pric": "106.289062500",
+   "occurs1_high_pric": "106.414062500",
+   "occurs1_low_pric": "106.226562500",
+   "occurs1_close_pric": "106.257812500",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.046875000",
+   "occurs1_cum_trd_qty": "77356"
+  },
+  {
+   "occurs1_ref_dt": "20260814",
+   "occurs1_open_pric": "106.515625000",
+   "occurs1_high_pric": "106.664062500",
+   "occurs1_low_pric": "106.289062500",
+   "occurs1_close_pric": "106.304687500",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.218750000",
+   "occurs1_cum_trd_qty": "40953"
+  },
+  {
+   "occurs1_ref_dt": "20260813",
+   "occurs1_open_pric": "106.226562500",
+   "occurs1_high_pric": "106.640625000",
+   "occurs1_low_pric": "106.226562500",
+   "occurs1_close_pric": "106.523437500",
+   "occurs1_rt": "0.26",
+   "occurs1_diff_rt": "0.273437500",
+   "occurs1_cum_trd_qty": "40540"
+  },
+  {
+   "occurs1_ref_dt": "20260812",
+   "occurs1_open_pric": "106.179687500",
+   "occurs1_high_pric": "106.414062500",
+   "occurs1_low_pric": "106.156250000",
+   "occurs1_close_pric": "106.250000000",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.046875000",
+   "occurs1_cum_trd_qty": "35307"
+  },
+  {
+   "occurs1_ref_dt": "20260811",
+   "occurs1_open_pric": "106.078125000",
+   "occurs1_high_pric": "106.257812500",
+   "occurs1_low_pric": "105.953125000",
+   "occurs1_close_pric": "106.203125000",
+   "occurs1_rt": "0.10",
+   "occurs1_diff_rt": "0.101562500",
+   "occurs1_cum_trd_qty": "27901"
+  },
+  {
+   "occurs1_ref_dt": "20260810",
+   "occurs1_open_pric": "106.257812500",
+   "occurs1_high_pric": "106.343750000",
+   "occurs1_low_pric": "106.070312500",
+   "occurs1_close_pric": "106.101562500",
+   "occurs1_rt": "-0.18",
+   "occurs1_diff_rt": "-0.187500000",
+   "occurs1_cum_trd_qty": "17593"
+  },
+  {
+   "occurs1_ref_dt": "20260807",
+   "occurs1_open_pric": "106.148437500",
+   "occurs1_high_pric": "106.554687500",
+   "occurs1_low_pric": "106.140625000",
+   "occurs1_close_pric": "106.289062500",
+   "occurs1_rt": "0.12",
+   "occurs1_diff_rt": "0.125000000",
+   "occurs1_cum_trd_qty": "4231"
+  },
+  {
+   "occurs1_ref_dt": "20260806",
+   "occurs1_open_pric": "106.453125000",
+   "occurs1_high_pric": "106.468750000",
+   "occurs1_low_pric": "106.140625000",
+   "occurs1_close_pric": "106.164062500",
+   "occurs1_rt": "-0.28",
+   "occurs1_diff_rt": "-0.296875000",
+   "occurs1_cum_trd_qty": "10421"
+  },
+  {
+   "occurs1_ref_dt": "20260805",
+   "occurs1_open_pric": "106.437500000",
+   "occurs1_high_pric": "106.515625000",
+   "occurs1_low_pric": "106.312500000",
+   "occurs1_close_pric": "106.460937500",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.039062500",
+   "occurs1_cum_trd_qty": "6847"
+  },
+  {
+   "occurs1_ref_dt": "20260804",
+   "occurs1_open_pric": "106.164062500",
+   "occurs1_high_pric": "106.460937500",
+   "occurs1_low_pric": "106.054687500",
+   "occurs1_close_pric": "106.421875000",
+   "occurs1_rt": "0.28",
+   "occurs1_diff_rt": "0.296875000",
+   "occurs1_cum_trd_qty": "7711"
+  },
+  {
+   "occurs1_ref_dt": "20260803",
+   "occurs1_open_pric": "106.078125000",
+   "occurs1_high_pric": "106.187500000",
+   "occurs1_low_pric": "106.062500000",
+   "occurs1_close_pric": "106.125000000",
+   "occurs1_rt": "0.25",
+   "occurs1_diff_rt": "0.265625000",
+   "occurs1_cum_trd_qty": "2200"
+  },
+  {
+   "occurs1_ref_dt": "20260731",
+   "occurs1_open_pric": "106.257812500",
+   "occurs1_high_pric": "106.257812500",
+   "occurs1_low_pric": "105.867187500",
+   "occurs1_close_pric": "105.859375000",
+   "occurs1_rt": "-0.35",
+   "occurs1_diff_rt": "-0.367187500",
+   "occurs1_cum_trd_qty": "2756"
+  },
+  {
+   "occurs1_ref_dt": "20260730",
+   "occurs1_open_pric": "106.210937500",
+   "occurs1_high_pric": "106.265625000",
+   "occurs1_low_pric": "106.164062500",
+   "occurs1_close_pric": "106.226562500",
+   "occurs1_rt": "-0.10",
+   "occurs1_diff_rt": "-0.101562500",
+   "occurs1_cum_trd_qty": "3603"
+  },
+  {
+   "occurs1_ref_dt": "20260729",
+   "occurs1_open_pric": "106.250000000",
+   "occurs1_high_pric": "106.312500000",
+   "occurs1_low_pric": "106.031250000",
+   "occurs1_close_pric": "106.328125000",
+   "occurs1_rt": "0.03",
+   "occurs1_diff_rt": "0.031250000",
+   "occurs1_cum_trd_qty": "2909"
+  },
+  {
+   "occurs1_ref_dt": "20260728",
+   "occurs1_open_pric": "106.125000000",
+   "occurs1_high_pric": "106.343750000",
+   "occurs1_low_pric": "106.117187500",
+   "occurs1_close_pric": "106.296875000",
+   "occurs1_rt": "0.15",
+   "occurs1_diff_rt": "0.164062500",
+   "occurs1_cum_trd_qty": "677"
+  },
+  {
+   "occurs1_ref_dt": "20260727",
+   "occurs1_open_pric": "106.218750000",
+   "occurs1_high_pric": "106.218750000",
+   "occurs1_low_pric": "106.093750000",
+   "occurs1_close_pric": "106.132812500",
+   "occurs1_rt": "0.13",
+   "occurs1_diff_rt": "0.132812500",
+   "occurs1_cum_trd_qty": "114"
+  },
+  {
+   "occurs1_ref_dt": "20260724",
+   "occurs1_open_pric": "106.007812500",
+   "occurs1_high_pric": "106.054687500",
+   "occurs1_low_pric": "106.000000000",
+   "occurs1_close_pric": "106.000000000",
+   "occurs1_rt": "0.16",
+   "occurs1_diff_rt": "0.171875000",
+   "occurs1_cum_trd_qty": "642"
+  },
+  {
+   "occurs1_ref_dt": "20260723",
+   "occurs1_open_pric": "106.000000000",
+   "occurs1_high_pric": "106.000000000",
+   "occurs1_low_pric": "105.804687500",
+   "occurs1_close_pric": "105.828125000",
+   "occurs1_rt": "-0.22",
+   "occurs1_diff_rt": "-0.234375000",
+   "occurs1_cum_trd_qty": "115"
+  },
+  {
+   "occurs1_ref_dt": "20260722",
+   "occurs1_open_pric": "106.257812500",
+   "occurs1_high_pric": "106.257812500",
+   "occurs1_low_pric": "106.039062500",
+   "occurs1_close_pric": "106.062500000",
+   "occurs1_rt": "-0.16",
+   "occurs1_diff_rt": "-0.171875000",
+   "occurs1_cum_trd_qty": "236"
+  },
+  {
+   "occurs1_ref_dt": "20260721",
+   "occurs1_open_pric": "106.460937500",
+   "occurs1_high_pric": "106.468750000",
+   "occurs1_low_pric": "106.203125000",
+   "occurs1_close_pric": "106.234375000",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.156250000",
+   "occurs1_cum_trd_qty": "445"
+  },
+  {
+   "occurs1_ref_dt": "20260720",
+   "occurs1_open_pric": "106.531250000",
+   "occurs1_high_pric": "106.531250000",
+   "occurs1_low_pric": "106.421875000",
+   "occurs1_close_pric": "106.390625000",
+   "occurs1_rt": "-0.22",
+   "occurs1_diff_rt": "-0.234375000",
+   "occurs1_cum_trd_qty": "246"
+  },
+  {
+   "occurs1_ref_dt": "20260717",
+   "occurs1_open_pric": "106.773437500",
+   "occurs1_high_pric": "106.812500000",
+   "occurs1_low_pric": "106.671875000",
+   "occurs1_close_pric": "106.625000000",
+   "occurs1_rt": "0.02",
+   "occurs1_diff_rt": "0.023437500",
+   "occurs1_cum_trd_qty": "301"
+  },
+  {
+   "occurs1_ref_dt": "20260716",
+   "occurs1_open_pric": "106.648437500",
+   "occurs1_high_pric": "106.679687500",
+   "occurs1_low_pric": "106.609375000",
+   "occurs1_close_pric": "106.601562500",
+   "occurs1_rt": "-0.12",
+   "occurs1_diff_rt": "-0.125000000",
+   "occurs1_cum_trd_qty": "5"
+  },
+  {
+   "occurs1_ref_dt": "20260715",
+   "occurs1_open_pric": "106.460937500",
+   "occurs1_high_pric": "106.742187500",
+   "occurs1_low_pric": "106.367187500",
+   "occurs1_close_pric": "106.726562500",
+   "occurs1_rt": "0.27",
+   "occurs1_diff_rt": "0.289062500",
+   "occurs1_cum_trd_qty": "969"
+  },
+  {
+   "occurs1_ref_dt": "20260714",
+   "occurs1_open_pric": "106.195312500",
+   "occurs1_high_pric": "106.500000000",
+   "occurs1_low_pric": "106.156250000",
+   "occurs1_close_pric": "106.437500000",
+   "occurs1_rt": "0.16",
+   "occurs1_diff_rt": "0.171875000",
+   "occurs1_cum_trd_qty": "1461"
+  },
+  {
+   "occurs1_ref_dt": "20260713",
+   "occurs1_open_pric": "106.398437500",
+   "occurs1_high_pric": "106.429687500",
+   "occurs1_low_pric": "106.203125000",
+   "occurs1_close_pric": "106.265625000",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.226562500",
+   "occurs1_cum_trd_qty": "417"
+  },
+  {
+   "occurs1_ref_dt": "20260710",
+   "occurs1_open_pric": "106.703125000",
+   "occurs1_high_pric": "106.703125000",
+   "occurs1_low_pric": "106.507812500",
+   "occurs1_close_pric": "106.492187500",
+   "occurs1_rt": "-0.18",
+   "occurs1_diff_rt": "-0.187500000",
+   "occurs1_cum_trd_qty": "1148"
+  },
+  {
+   "occurs1_ref_dt": "20260709",
+   "occurs1_open_pric": "106.445312500",
+   "occurs1_high_pric": "106.648437500",
+   "occurs1_low_pric": "106.445312500",
+   "occurs1_close_pric": "106.679687500",
+   "occurs1_rt": "0.16",
+   "occurs1_diff_rt": "0.171875000",
+   "occurs1_cum_trd_qty": "94"
+  },
+  {
+   "occurs1_ref_dt": "20260708",
+   "occurs1_open_pric": "106.609375000",
+   "occurs1_high_pric": "106.656250000",
+   "occurs1_low_pric": "106.398437500",
+   "occurs1_close_pric": "106.507812500",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.226562500",
+   "occurs1_cum_trd_qty": "76"
+  },
+  {
+   "occurs1_ref_dt": "20260707",
+   "occurs1_open_pric": "106.906250000",
+   "occurs1_high_pric": "106.906250000",
+   "occurs1_low_pric": "106.585937500",
+   "occurs1_close_pric": "106.734375000",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.226562500",
+   "occurs1_cum_trd_qty": "2554"
+  },
+  {
+   "occurs1_ref_dt": "20260706",
+   "occurs1_open_pric": "106.914062500",
+   "occurs1_high_pric": "107.007812500",
+   "occurs1_low_pric": "106.914062500",
+   "occurs1_close_pric": "106.960937500",
+   "occurs1_rt": "0.06",
+   "occurs1_diff_rt": "0.062500000",
+   "occurs1_cum_trd_qty": "2507"
+  },
+  {
+   "occurs1_ref_dt": "20260703",
+   "occurs1_open_pric": "106.898437500",
+   "occurs1_high_pric": "106.898437500",
+   "occurs1_low_pric": "106.898437500",
+   "occurs1_close_pric": "106.898437500",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260702",
+   "occurs1_open_pric": "106.953125000",
+   "occurs1_high_pric": "106.953125000",
+   "occurs1_low_pric": "106.953125000",
+   "occurs1_close_pric": "106.898437500",
+   "occurs1_rt": "0.05",
+   "occurs1_diff_rt": "0.054687500",
+   "occurs1_cum_trd_qty": "1836"
+  },
+  {
+   "occurs1_ref_dt": "20260701",
+   "occurs1_open_pric": "106.937500000",
+   "occurs1_high_pric": "106.937500000",
+   "occurs1_low_pric": "106.937500000",
+   "occurs1_close_pric": "106.843750000",
+   "occurs1_rt": "-0.17",
+   "occurs1_diff_rt": "-0.179687500",
+   "occurs1_cum_trd_qty": "19"
+  },
+  {
+   "occurs1_ref_dt": "20260630",
+   "occurs1_open_pric": "107.289062500",
+   "occurs1_high_pric": "107.289062500",
+   "occurs1_low_pric": "106.882812500",
+   "occurs1_close_pric": "107.023437500",
+   "occurs1_rt": "-0.17",
+   "occurs1_diff_rt": "-0.187500000",
+   "occurs1_cum_trd_qty": "9"
+  },
+  {
+   "occurs1_ref_dt": "20260629",
+   "occurs1_open_pric": "107.281250000",
+   "occurs1_high_pric": "107.281250000",
+   "occurs1_low_pric": "107.281250000",
+   "occurs1_close_pric": "107.210937500",
+   "occurs1_rt": "-0.07",
+   "occurs1_diff_rt": "-0.070312500",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260626",
+   "occurs1_open_pric": "107.281250000",
+   "occurs1_high_pric": "107.289062500",
+   "occurs1_low_pric": "107.281250000",
+   "occurs1_close_pric": "107.281250000",
+   "occurs1_rt": "0.15",
+   "occurs1_diff_rt": "0.156250000",
+   "occurs1_cum_trd_qty": "101"
+  },
+  {
+   "occurs1_ref_dt": "20260625",
+   "occurs1_open_pric": "107.226562500",
+   "occurs1_high_pric": "107.226562500",
+   "occurs1_low_pric": "107.093750000",
+   "occurs1_close_pric": "107.125000000",
+   "occurs1_rt": "0.07",
+   "occurs1_diff_rt": "0.070312500",
+   "occurs1_cum_trd_qty": "13"
+  },
+  {
+   "occurs1_ref_dt": "20260624",
+   "occurs1_open_pric": "106.812500000",
+   "occurs1_high_pric": "106.812500000",
+   "occurs1_low_pric": "106.812500000",
+   "occurs1_close_pric": "107.054687500",
+   "occurs1_rt": "0.35",
+   "occurs1_diff_rt": "0.375000000",
+   "occurs1_cum_trd_qty": "13"
+  },
+  {
+   "occurs1_ref_dt": "20260623",
+   "occurs1_open_pric": "106.664062500",
+   "occurs1_high_pric": "106.664062500",
+   "occurs1_low_pric": "106.664062500",
+   "occurs1_close_pric": "106.679687500",
+   "occurs1_rt": "0.13",
+   "occurs1_diff_rt": "0.140625000",
+   "occurs1_cum_trd_qty": "6"
+  },
+  {
+   "occurs1_ref_dt": "20260622",
+   "occurs1_open_pric": "106.593750000",
+   "occurs1_high_pric": "106.593750000",
+   "occurs1_low_pric": "106.554687500",
+   "occurs1_close_pric": "106.539062500",
+   "occurs1_rt": "-0.25",
+   "occurs1_diff_rt": "-0.265625000",
+   "occurs1_cum_trd_qty": "24"
+  },
+  {
+   "occurs1_ref_dt": "20260619",
+   "occurs1_open_pric": "106.718750000",
+   "occurs1_high_pric": "106.718750000",
+   "occurs1_low_pric": "106.718750000",
+   "occurs1_close_pric": "106.804687500",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260618",
+   "occurs1_open_pric": "106.898437500",
+   "occurs1_high_pric": "106.898437500",
+   "occurs1_low_pric": "106.898437500",
+   "occurs1_close_pric": "106.804687500",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.039062500",
+   "occurs1_cum_trd_qty": "6"
+  },
+  {
+   "occurs1_ref_dt": "20260617",
+   "occurs1_open_pric": "107.109375000",
+   "occurs1_high_pric": "107.109375000",
+   "occurs1_low_pric": "106.562500000",
+   "occurs1_close_pric": "106.765625000",
+   "occurs1_rt": "-0.33",
+   "occurs1_diff_rt": "-0.351562500",
+   "occurs1_cum_trd_qty": "5"
+  },
+  {
+   "occurs1_ref_dt": "20260616",
+   "occurs1_open_pric": "107.054687500",
+   "occurs1_high_pric": "107.054687500",
+   "occurs1_low_pric": "107.054687500",
+   "occurs1_close_pric": "107.117187500",
+   "occurs1_rt": "0.14",
+   "occurs1_diff_rt": "0.148437500",
+   "occurs1_cum_trd_qty": "9"
+  },
+  {
+   "occurs1_ref_dt": "20260615",
+   "occurs1_open_pric": "107.070312500",
+   "occurs1_high_pric": "107.070312500",
+   "occurs1_low_pric": "107.070312500",
+   "occurs1_close_pric": "106.968750000",
+   "occurs1_rt": "0.10",
+   "occurs1_diff_rt": "0.101562500",
+   "occurs1_cum_trd_qty": "1"
+  },
+  {
+   "occurs1_ref_dt": "20260612",
+   "occurs1_open_pric": "107.117187500",
+   "occurs1_high_pric": "107.117187500",
+   "occurs1_low_pric": "107.117187500",
+   "occurs1_close_pric": "106.867187500",
+   "occurs1_rt": "-0.09",
+   "occurs1_diff_rt": "-0.093750000",
+   "occurs1_cum_trd_qty": "1"
+  },
+  {
+   "occurs1_ref_dt": "20260611",
+   "occurs1_open_pric": "106.726562500",
+   "occurs1_high_pric": "106.726562500",
+   "occurs1_low_pric": "106.726562500",
+   "occurs1_close_pric": "106.960937500",
+   "occurs1_rt": "0.30",
+   "occurs1_diff_rt": "0.320312500",
+   "occurs1_cum_trd_qty": "1"
+  },
+  {
+   "occurs1_ref_dt": "20260610",
+   "occurs1_open_pric": "106.640625000",
+   "occurs1_high_pric": "106.640625000",
+   "occurs1_low_pric": "106.640625000",
+   "occurs1_close_pric": "106.640625000",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.039062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260609",
+   "occurs1_open_pric": "106.562500000",
+   "occurs1_high_pric": "106.562500000",
+   "occurs1_low_pric": "106.562500000",
+   "occurs1_close_pric": "106.679687500",
+   "occurs1_rt": "0.11",
+   "occurs1_diff_rt": "0.117187500",
+   "occurs1_cum_trd_qty": "55"
+  },
+  {
+   "occurs1_ref_dt": "20260608",
+   "occurs1_open_pric": "106.476562500",
+   "occurs1_high_pric": "106.671875000",
+   "occurs1_low_pric": "106.476562500",
+   "occurs1_close_pric": "106.562500000",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "54"
+  },
+  {
+   "occurs1_ref_dt": "20260605",
+   "occurs1_open_pric": "106.648437500",
+   "occurs1_high_pric": "106.648437500",
+   "occurs1_low_pric": "106.648437500",
+   "occurs1_close_pric": "106.562500000",
+   "occurs1_rt": "-0.40",
+   "occurs1_diff_rt": "-0.429687500",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260604",
+   "occurs1_open_pric": "106.906250000",
+   "occurs1_high_pric": "106.906250000",
+   "occurs1_low_pric": "106.906250000",
+   "occurs1_close_pric": "106.992187500",
+   "occurs1_rt": "0.11",
+   "occurs1_diff_rt": "0.117187500",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260603",
+   "occurs1_open_pric": "106.843750000",
+   "occurs1_high_pric": "106.843750000",
+   "occurs1_low_pric": "106.843750000",
+   "occurs1_close_pric": "106.875000000",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "2"
+  },
+  {
+   "occurs1_ref_dt": "20260602",
+   "occurs1_open_pric": "107.203125000",
+   "occurs1_high_pric": "107.203125000",
+   "occurs1_low_pric": "107.101562500",
+   "occurs1_close_pric": "107.039062500",
+   "occurs1_rt": "0.03",
+   "occurs1_diff_rt": "0.031250000",
+   "occurs1_cum_trd_qty": "20"
+  },
+  {
+   "occurs1_ref_dt": "20260601",
+   "occurs1_open_pric": "106.882812500",
+   "occurs1_high_pric": "107.015625000",
+   "occurs1_low_pric": "106.882812500",
+   "occurs1_close_pric": "107.007812500",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "26"
+  },
+  {
+   "occurs1_ref_dt": "20260529",
+   "occurs1_open_pric": "107.171875000",
+   "occurs1_high_pric": "107.171875000",
+   "occurs1_low_pric": "107.171875000",
+   "occurs1_close_pric": "107.171875000",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.039062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260528",
+   "occurs1_open_pric": "107.132812500",
+   "occurs1_high_pric": "107.132812500",
+   "occurs1_low_pric": "107.132812500",
+   "occurs1_close_pric": "107.132812500",
+   "occurs1_rt": "0.07",
+   "occurs1_diff_rt": "0.078125000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260527",
+   "occurs1_open_pric": "107.078125000",
+   "occurs1_high_pric": "107.078125000",
+   "occurs1_low_pric": "107.078125000",
+   "occurs1_close_pric": "107.054687500",
+   "occurs1_rt": "0.03",
+   "occurs1_diff_rt": "0.031250000",
+   "occurs1_cum_trd_qty": "120"
+  },
+  {
+   "occurs1_ref_dt": "20260526",
+   "occurs1_open_pric": "106.976562500",
+   "occurs1_high_pric": "106.976562500",
+   "occurs1_low_pric": "106.757812500",
+   "occurs1_close_pric": "107.023437500",
+   "occurs1_rt": "0.36",
+   "occurs1_diff_rt": "0.382812500",
+   "occurs1_cum_trd_qty": "169"
+  },
+  {
+   "occurs1_ref_dt": "20260525",
+   "occurs1_open_pric": "106.882812500",
+   "occurs1_high_pric": "106.882812500",
+   "occurs1_low_pric": "106.882812500",
+   "occurs1_close_pric": "106.640625000",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "1"
+  },
+  {
+   "occurs1_ref_dt": "20260522",
+   "occurs1_open_pric": "106.632812500",
+   "occurs1_high_pric": "106.632812500",
+   "occurs1_low_pric": "106.632812500",
+   "occurs1_close_pric": "106.640625000",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.046875000",
+   "occurs1_cum_trd_qty": "1"
+  },
+  {
+   "occurs1_ref_dt": "20260521",
+   "occurs1_open_pric": "106.578125000",
+   "occurs1_high_pric": "106.687500000",
+   "occurs1_low_pric": "106.578125000",
+   "occurs1_close_pric": "106.687500000",
+   "occurs1_rt": "-0.12",
+   "occurs1_diff_rt": "-0.132812500",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260520",
+   "occurs1_open_pric": "106.687500000",
+   "occurs1_high_pric": "106.703125000",
+   "occurs1_low_pric": "106.687500000",
+   "occurs1_close_pric": "106.820312500",
+   "occurs1_rt": "0.43",
+   "occurs1_diff_rt": "0.460937500",
+   "occurs1_cum_trd_qty": "60"
+  },
+  {
+   "occurs1_ref_dt": "20260519",
+   "occurs1_open_pric": "106.609375000",
+   "occurs1_high_pric": "106.609375000",
+   "occurs1_low_pric": "106.609375000",
+   "occurs1_close_pric": "106.359375000",
+   "occurs1_rt": "-0.21",
+   "occurs1_diff_rt": "-0.218750000",
+   "occurs1_cum_trd_qty": "3"
+  },
+  {
+   "occurs1_ref_dt": "20260518",
+   "occurs1_open_pric": "106.570312500",
+   "occurs1_high_pric": "106.656250000",
+   "occurs1_low_pric": "106.570312500",
+   "occurs1_close_pric": "106.578125000",
+   "occurs1_rt": "-0.08",
+   "occurs1_diff_rt": "-0.085937500",
+   "occurs1_cum_trd_qty": "2"
+  },
+  {
+   "occurs1_ref_dt": "20260515",
+   "occurs1_open_pric": "106.664062500",
+   "occurs1_high_pric": "106.664062500",
+   "occurs1_low_pric": "106.664062500",
+   "occurs1_close_pric": "106.664062500",
+   "occurs1_rt": "-0.58",
+   "occurs1_diff_rt": "-0.617187500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260514",
+   "occurs1_open_pric": "107.281250000",
+   "occurs1_high_pric": "107.281250000",
+   "occurs1_low_pric": "107.281250000",
+   "occurs1_close_pric": "107.281250000",
+   "occurs1_rt": "0.04",
+   "occurs1_diff_rt": "0.039062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260513",
+   "occurs1_open_pric": "107.242187500",
+   "occurs1_high_pric": "107.242187500",
+   "occurs1_low_pric": "107.242187500",
+   "occurs1_close_pric": "107.242187500",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.039062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260512",
+   "occurs1_open_pric": "107.273437500",
+   "occurs1_high_pric": "107.273437500",
+   "occurs1_low_pric": "107.210937500",
+   "occurs1_close_pric": "107.281250000",
+   "occurs1_rt": "-0.23",
+   "occurs1_diff_rt": "-0.250000000",
+   "occurs1_cum_trd_qty": "4"
+  },
+  {
+   "occurs1_ref_dt": "20260511",
+   "occurs1_open_pric": "107.789062500",
+   "occurs1_high_pric": "107.789062500",
+   "occurs1_low_pric": "107.789062500",
+   "occurs1_close_pric": "107.531250000",
+   "occurs1_rt": "-0.24",
+   "occurs1_diff_rt": "-0.257812500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260508",
+   "occurs1_open_pric": "107.789062500",
+   "occurs1_high_pric": "107.789062500",
+   "occurs1_low_pric": "107.789062500",
+   "occurs1_close_pric": "107.789062500",
+   "occurs1_rt": "0.13",
+   "occurs1_diff_rt": "0.140625000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260507",
+   "occurs1_open_pric": "107.648437500",
+   "occurs1_high_pric": "107.648437500",
+   "occurs1_low_pric": "107.648437500",
+   "occurs1_close_pric": "107.648437500",
+   "occurs1_rt": "-0.18",
+   "occurs1_diff_rt": "-0.195312500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260506",
+   "occurs1_open_pric": "108.078125000",
+   "occurs1_high_pric": "108.078125000",
+   "occurs1_low_pric": "108.078125000",
+   "occurs1_close_pric": "107.843750000",
+   "occurs1_rt": "0.30",
+   "occurs1_diff_rt": "0.320312500",
+   "occurs1_cum_trd_qty": "4"
+  },
+  {
+   "occurs1_ref_dt": "20260505",
+   "occurs1_open_pric": "107.789062500",
+   "occurs1_high_pric": "107.789062500",
+   "occurs1_low_pric": "107.726562500",
+   "occurs1_close_pric": "107.523437500",
+   "occurs1_rt": "0.09",
+   "occurs1_diff_rt": "0.101562500",
+   "occurs1_cum_trd_qty": "2"
+  },
+  {
+   "occurs1_ref_dt": "20260504",
+   "occurs1_open_pric": "107.757812500",
+   "occurs1_high_pric": "107.757812500",
+   "occurs1_low_pric": "107.757812500",
+   "occurs1_close_pric": "107.421875000",
+   "occurs1_rt": "-0.31",
+   "occurs1_diff_rt": "-0.335937500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260501",
+   "occurs1_open_pric": "107.757812500",
+   "occurs1_high_pric": "107.757812500",
+   "occurs1_low_pric": "107.757812500",
+   "occurs1_close_pric": "107.757812500",
+   "occurs1_rt": "0.01",
+   "occurs1_diff_rt": "0.007812500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260430",
+   "occurs1_open_pric": "107.750000000",
+   "occurs1_high_pric": "107.750000000",
+   "occurs1_low_pric": "107.750000000",
+   "occurs1_close_pric": "107.750000000",
+   "occurs1_rt": "0.17",
+   "occurs1_diff_rt": "0.179687500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260429",
+   "occurs1_open_pric": "107.570312500",
+   "occurs1_high_pric": "107.570312500",
+   "occurs1_low_pric": "107.570312500",
+   "occurs1_close_pric": "107.570312500",
+   "occurs1_rt": "-0.35",
+   "occurs1_diff_rt": "-0.375000000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260428",
+   "occurs1_open_pric": "107.945312500",
+   "occurs1_high_pric": "107.945312500",
+   "occurs1_low_pric": "107.945312500",
+   "occurs1_close_pric": "107.945312500",
+   "occurs1_rt": "-0.15",
+   "occurs1_diff_rt": "-0.164062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260427",
+   "occurs1_open_pric": "108.234375000",
+   "occurs1_high_pric": "108.234375000",
+   "occurs1_low_pric": "108.234375000",
+   "occurs1_close_pric": "108.109375000",
+   "occurs1_rt": "-0.12",
+   "occurs1_diff_rt": "-0.125000000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260424",
+   "occurs1_open_pric": "108.234375000",
+   "occurs1_high_pric": "108.234375000",
+   "occurs1_low_pric": "108.234375000",
+   "occurs1_close_pric": "108.234375000",
+   "occurs1_rt": "0.16",
+   "occurs1_diff_rt": "0.171875000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260423",
+   "occurs1_open_pric": "108.062500000",
+   "occurs1_high_pric": "108.062500000",
+   "occurs1_low_pric": "108.062500000",
+   "occurs1_close_pric": "108.062500000",
+   "occurs1_rt": "-0.16",
+   "occurs1_diff_rt": "-0.171875000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260422",
+   "occurs1_open_pric": "108.234375000",
+   "occurs1_high_pric": "108.234375000",
+   "occurs1_low_pric": "108.234375000",
+   "occurs1_close_pric": "108.234375000",
+   "occurs1_rt": "-0.04",
+   "occurs1_diff_rt": "-0.039062500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260421",
+   "occurs1_open_pric": "108.273437500",
+   "occurs1_high_pric": "108.273437500",
+   "occurs1_low_pric": "108.273437500",
+   "occurs1_close_pric": "108.273437500",
+   "occurs1_rt": "-0.25",
+   "occurs1_diff_rt": "-0.273437500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260420",
+   "occurs1_open_pric": "108.601562500",
+   "occurs1_high_pric": "108.601562500",
+   "occurs1_low_pric": "108.601562500",
+   "occurs1_close_pric": "108.546875000",
+   "occurs1_rt": "-0.05",
+   "occurs1_diff_rt": "-0.054687500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260417",
+   "occurs1_open_pric": "108.601562500",
+   "occurs1_high_pric": "108.601562500",
+   "occurs1_low_pric": "108.601562500",
+   "occurs1_close_pric": "108.601562500",
+   "occurs1_rt": "0.32",
+   "occurs1_diff_rt": "0.351562500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260416",
+   "occurs1_open_pric": "108.250000000",
+   "occurs1_high_pric": "108.250000000",
+   "occurs1_low_pric": "108.250000000",
+   "occurs1_close_pric": "108.250000000",
+   "occurs1_rt": "-0.06",
+   "occurs1_diff_rt": "-0.070312500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260415",
+   "occurs1_open_pric": "108.320312500",
+   "occurs1_high_pric": "108.320312500",
+   "occurs1_low_pric": "108.320312500",
+   "occurs1_close_pric": "108.320312500",
+   "occurs1_rt": "-0.10",
+   "occurs1_diff_rt": "-0.109375000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260414",
+   "occurs1_open_pric": "108.429687500",
+   "occurs1_high_pric": "108.429687500",
+   "occurs1_low_pric": "108.429687500",
+   "occurs1_close_pric": "108.429687500",
+   "occurs1_rt": "0.18",
+   "occurs1_diff_rt": "0.195312500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260413",
+   "occurs1_open_pric": "108.132812500",
+   "occurs1_high_pric": "108.132812500",
+   "occurs1_low_pric": "108.132812500",
+   "occurs1_close_pric": "108.234375000",
+   "occurs1_rt": "0.09",
+   "occurs1_diff_rt": "0.101562500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260410",
+   "occurs1_open_pric": "108.132812500",
+   "occurs1_high_pric": "108.132812500",
+   "occurs1_low_pric": "108.132812500",
+   "occurs1_close_pric": "108.132812500",
+   "occurs1_rt": "-0.09",
+   "occurs1_diff_rt": "-0.101562500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260409",
+   "occurs1_open_pric": "108.234375000",
+   "occurs1_high_pric": "108.234375000",
+   "occurs1_low_pric": "108.234375000",
+   "occurs1_close_pric": "108.234375000",
+   "occurs1_rt": "0.01",
+   "occurs1_diff_rt": "0.015625000",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260408",
+   "occurs1_open_pric": "108.218750000",
+   "occurs1_high_pric": "108.218750000",
+   "occurs1_low_pric": "108.218750000",
+   "occurs1_close_pric": "108.218750000",
+   "occurs1_rt": "0.24",
+   "occurs1_diff_rt": "0.257812500",
+   "occurs1_cum_trd_qty": "0"
+  },
+  {
+   "occurs1_ref_dt": "20260407",
+   "occurs1_open_pric": "107.960937500",
+   "occurs1_high_pric": "107.960937500",
+   "occurs1_low_pric": "107.960937500",
+   "occurs1_close_pric": "107.960937500",
+   "occurs1_rt": "0.00",
+   "occurs1_diff_rt": "0.000000000",
+   "occurs1_cum_trd_qty": "0"
+  }
+ ]
+}
