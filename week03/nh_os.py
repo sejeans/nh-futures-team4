@@ -8,7 +8,7 @@ sys.path.insert(0, str(HERE.parent / "week02"))
 import nh as _nh  # noqa: E402
 
 _nh.LOG_DIR = HERE / "results" / "api_log"
-_nh.MASK_SUFFIX = ("ac_no", "ac_nm", "ip_addr")  # 해외 주문내역에는 occurs1_ip_addr 가 있다 (명세 overseas/order-history)
+_nh.MASK_SUFFIX = ("ac_no", "ac_nm", "ip_addr", "user_id")  # 해외 주문내역에는 occurs1_ip_addr, occurs1_user_id 가 있다 (11/05 확인)
 NHError, OrderUnknown = _nh.NHError, _nh.OrderUnknown
 
 EXCH = "FCME"  # F(선물) + 거래소코드 (명세 overseas/price)
