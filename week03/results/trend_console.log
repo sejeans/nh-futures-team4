@@ -1,0 +1,24 @@
+[2026-11-06  8:10:00.49] git pull 
+From https://github.com/sejeans/nh-futures-team4
+   66fb326..be237a6  main       -> origin/main
+Updating a8afffb..be237a6
+Fast-forward
+ week02/results/api_log/20261101.jsonl  |  53 +++++++
+ week03/README.md                       | 271 +++++++++++++++++++++++++++++++++
+ week03/nh_os.py                        |   2 +-
+ week03/plot_strategies.py              |  56 +++++++
+ week03/results/api_log/20261102.jsonl  |   4 +-
+ week03/results/api_log/20261105.jsonl  |  13 +-
+ week03/results/strategies_equity.png   | Bin 0 -> 165157 bytes
+ week03/results/strategies_summary.json |   2 +-
+ week03/strategies.py                   |   4 +-
+ 9 files changed, 398 insertions(+), 7 deletions(-)
+ create mode 100644 week02/results/api_log/20261101.jsonl
+ create mode 100644 week03/README.md
+ create mode 100644 week03/plot_strategies.py
+ create mode 100644 week03/results/strategies_equity.png
+be237a6 week03: 오류 제보 재확인(11/05 20:16) 반영, 근거 로그 추가
+저장: bars_ZN_cont_1d_20261106_0810.json 7018 건
+[신호] {"last_bar": "2026-11-05", "close_adj": 107.328125, "close_252_ago": 113.5, "date_252_ago": "2025-11-14", "target": -1}
+[잔고] {"position": -1, "avg": 106.9375}
+[결과] {"msg": "목표 = 잔고. 주문 없음"}
