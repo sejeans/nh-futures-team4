@@ -1,7 +1,6 @@
 # NH선물 REST API 클라이언트 — 토큰 재사용 · 호출 간격 · 재시도 · 응답 로그 · 실주문 차단
 # 1주차 first_call.py 의 load_env·BASE_URLS 를 이어 쓴다
 import json
-import socket
 import sys
 import time
 import urllib.error
@@ -23,7 +22,7 @@ MIN_GAP = {"quote": 0.1, "account": 0.1, "order": 0.2, "auth": 0.34}  # 초당 �
 ORDER_PATHS = {"order", "modify", "cancel", "order-night", "modify-night", "cancel-night"}
 ACCOUNT_PATHS = {"deposit", "open-interest", "order-history", "order-error", "orderable-quantity"}
 RATE_CODES = {"EGW020", "EGW036"}   # 허용량·속도 초과 (운영안내 22p)
-TOKEN_CODES = {"EGW018", "EGW052"}  # 토큰 만료
+TOKEN_CODES = {"EGW018", "EGW052", "EGW023"}  # 토큰 만료·무효. EGW023 은 발급 직후 1회 401, 다음 호출은 정상 (2026-11-08 16:55 로그)
 MASK_SUFFIX = ("ac_no", "ac_nm", "user_ip_addr")  # 로그에 남기지 않는다 (계획 5-3)
 SYM = "A066C000"  # 코스닥150 F 202612
 BAL_SIDE = {"1": 1, "2": -1}  # 잔고 trd_div 도 주문처럼 1 매수·2 매도라고 가정 [10/26 manual_roundtrip.py 로 확인]
@@ -56,11 +55,13 @@ def _codes(res):
 
 
 class NH:
+    KEY = "NH_DOMESTIC"  # 국내·해외 권한이 키마다 따로라 .env 에 두 쌍을 둔다 (2026-11-08)
+
     def __init__(self, env_file=ROOT / ".env"):
         env = load_env(env_file)
         self.env = env.get("NH_ENV", "paper")
         self.base = BASE_URLS[self.env]
-        self._key, self._secret = env["NH_DOMESTIC_APP_KEY"], env["NH_DOMESTIC_APP_SECRET"]
+        self._key, self._secret = env[f"{self.KEY}_APP_KEY"], env[f"{self.KEY}_APP_SECRET"]
         self._token, self._token_until = None, 0.0
         self._last = {}
 
@@ -110,7 +111,7 @@ class NH:
             headers = {"Authorization": self._token, "Content-Type": "application/json"}
             try:
                 status, res, elapsed = self._http(path, json.dumps(body).encode(), headers, kind)
-            except (TimeoutError, socket.timeout, urllib.error.URLError) as e:
+            except OSError as e:  # 타임아웃·URLError·연결 끊김·SSL 오류 (11/09 응답 읽다가 SSLV3_ALERT_BAD_RECORD_MAC)
                 self._log(path, body, None, {"_error": repr(e)}, None, attempt)
                 if kind == "order":
                     raise OrderUnknown(f"주문 응답 없음 ({e!r})") from e

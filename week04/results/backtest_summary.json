@@ -1,0 +1,21 @@
+{
+  "rule": {
+    "N": 10,
+    "K": 1.5,
+    "STOP_BP": 4.0,
+    "MAX_DAYS": 10,
+    "SIGNAL_TM": "15:30",
+    "RATIO": [
+      3,
+      1
+    ],
+    "COST_KRW": 67680
+  },
+  "z_days": 28,
+  "trades": 4,
+  "net_krw": -520720,
+  "gross_krw": -250000,
+  "wins": 2,
+  "open_position": null,
+  "z_last": -1.35
+}

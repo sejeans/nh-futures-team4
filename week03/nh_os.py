@@ -19,6 +19,8 @@ P = "/trade/v1/overseas/"
 
 
 class NHOverseas(_nh.NH):
+    KEY = "NH_OVERSEAS"
+
     def pages(self, name, body, start="", max_pages=100):
         """nxt_key 를 따라가며 Occurs1 을 모은다. 키가 비거나 9 로만 채워지면 끝.
         chart-minute 은 마지막 페이지에 9 32자리를 주고, 그 키로 다시 부르면 처음 페이지로 돌아간다 (2026-11-01 로그)"""

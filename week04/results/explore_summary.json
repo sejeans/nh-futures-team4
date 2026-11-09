@@ -1,0 +1,27 @@
+{
+  "bars": 14528,
+  "days": 38,
+  "first": "2026-09-11 08:45:00",
+  "last": "2026-11-09 14:27:00",
+  "dv01_won": {
+    "3y": 28792,
+    "10y": 86602,
+    "ratio": 3.008
+  },
+  "beta_1m_price": 1.172,
+  "corr_1m_price": 0.531,
+  "spread_bp": {
+    "level_last": 21.49,
+    "level_min": 19.52,
+    "level_max": 41.29,
+    "intraday_range_median": 2.6,
+    "open_to_close_abs_median": 1.01,
+    "close_to_close_abs_median": 1.26,
+    "chg_5m_std": 0.299
+  },
+  "half_life": {
+    "intraday_5m_bars": 4.1,
+    "daily_close_days": 5.9
+  },
+  "bp_value_won_per_10y_contract": 86602
+}
