@@ -79,8 +79,12 @@ class NHOverseas(_nh.NH):
     def position(self, sym=ZN):
         """잔고 기준 순포지션(+매수/-매도 계약 수)과 평균가. 잔고 trd_tp 1=매수 2=매도 (명세)"""
         rows = [r for r in self.open_interest() if r.get("occurs1_sym", "").strip() == sym]
-        pos = sum({"1": 1, "2": -1}[r["occurs1_trd_tp"].strip()] * int(float(r["occurs1_opint_qty"])) for r in rows)
-        return pos, (float(rows[0]["occurs1_avg_pric"]) if rows else None)
+        qty = [int(float(r["occurs1_opint_qty"])) for r in rows]
+        pos = sum({"1": 1, "2": -1}[r["occurs1_trd_tp"].strip()] * q for r, q in zip(rows, qty))
+        if len({r["occurs1_trd_tp"].strip() for r in rows}) > 1:
+            raise NHError(f"{sym} 매수·매도 잔고가 같이 있다: {rows}")
+        avg = sum(q * float(r["occurs1_avg_pric"]) for r, q in zip(rows, qty)) / sum(qty) if sum(qty) else None
+        return pos, avg  # 여러 행이면 수량 가중 평균가 (11/11, 24계약 대비)
 
     def find_fill(self, ord_no, tries=5):
         """주문내역에서 체결(또는 거부)을 찾는다. 못 찾으면 None. 주문상태 6=전체체결 9=거부 (명세)"""
