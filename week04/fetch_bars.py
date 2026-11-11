@@ -42,6 +42,8 @@ def fetch(sym, start, end):
             break
     if todo:
         print(sym, "끝내 못 받은 날:", todo)
+    if not recs:  # 11/10: 하루도 못 받았는데 빈 파일을 저장해, 재시작할 때마다 load 에서 죽고 다시 받지 못했다
+        sys.exit(f"{sym} {start}~{end} 분봉을 하루도 못 받음. 파일을 저장하지 않고 종료")
     recs.sort(key=lambda r: r["request"]["inq_strt_dt"])
     path = RESULTS / f"bars_{sym}_1m_{start.replace('-', '')}_{end.replace('-', '')}.json"
     RESULTS.mkdir(exist_ok=True)
