@@ -1,0 +1,80 @@
+{
+  "move_ticks": {
+    "open_to_close": {
+      "median": 4.0,
+      "p90": 9.0,
+      "max": 19.0
+    },
+    "high_low": {
+      "median": 10.0,
+      "p90": 14.400000000000006,
+      "max": 28.0
+    }
+  },
+  "TSMOM 손절 8": {
+    "days": 49,
+    "mean": -606,
+    "median": -1134,
+    "win": 0.41,
+    "stops": 11,
+    "worst": -4134,
+    "best": 6366,
+    "sum": -29691,
+    "max_dd": -30378
+  },
+  "TSMOM 손절 10": {
+    "days": 49,
+    "mean": -262,
+    "median": -384,
+    "win": 0.45,
+    "stops": 3,
+    "worst": -4509,
+    "best": 6366,
+    "sum": -12816,
+    "max_dd": -14904
+  },
+  "TSMOM 손절 15": {
+    "days": 49,
+    "mean": -292,
+    "median": -384,
+    "win": 0.45,
+    "stops": 2,
+    "worst": -6759,
+    "best": 6366,
+    "sum": -14316,
+    "max_dd": -16404
+  },
+  "TSMOM 손절 없음": {
+    "days": 49,
+    "mean": -307,
+    "median": -384,
+    "win": 0.45,
+    "stops": 0,
+    "worst": -7884,
+    "best": 6366,
+    "sum": -15066,
+    "max_dd": -17154
+  },
+  "항상 매수 손절 10": {
+    "days": 49,
+    "mean": -1226,
+    "median": -1134,
+    "win": 0.27,
+    "stops": 6,
+    "worst": -4509,
+    "best": 6366,
+    "sum": -60066,
+    "max_dd": -60798
+  },
+  "항상 매도 손절 10": {
+    "days": 49,
+    "mean": -262,
+    "median": -384,
+    "win": 0.45,
+    "stops": 3,
+    "worst": -4509,
+    "best": 6366,
+    "sum": -12816,
+    "max_dd": -14904
+  }
+}
