@@ -1,0 +1,30 @@
+[
+  {
+    "step": "A 발급 직후, A로 조회",
+    "at": "2026-11-11T17:30:41.145",
+    "status": 200,
+    "code": null,
+    "msg": null
+  },
+  {
+    "step": "B 발급 후, A로 조회",
+    "at": "2026-11-11T17:30:41.387",
+    "status": 200,
+    "code": null,
+    "msg": null
+  },
+  {
+    "step": "B 발급 후, B로 조회",
+    "at": "2026-11-11T17:30:41.495",
+    "status": 200,
+    "code": null,
+    "msg": null
+  },
+  {
+    "step": "A로 한 번 더",
+    "at": "2026-11-11T17:30:41.572",
+    "status": 200,
+    "code": null,
+    "msg": null
+  }
+]
