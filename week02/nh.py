@@ -1,6 +1,7 @@
 # NH선물 REST API 클라이언트 — 토큰 재사용 · 호출 간격 · 재시도 · 응답 로그 · 실주문 차단
 # 1주차 first_call.py 의 load_env·BASE_URLS 를 이어 쓴다
 import json
+import socket
 import sys
 import time
 import urllib.error
@@ -14,7 +15,8 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "week01"))
 from first_call import BASE_URLS, load_env  # noqa: E402
 
-LOG_DIR = HERE / "results" / "api_log"
+LOG_DIR = HERE / "results" / "api_log"  # 파일 이름에 PC 이름을 붙인다: 두 PC가 같은 파일에 쓰면 git pull 이 충돌한다 (11/11)
+LOG_NAME = "{:%Y%m%d}_" + socket.gethostname() + ".jsonl"
 TIMEOUT = 10
 RETRIES = 3
 BACKOFF = [0.5, 1, 2, 4]
@@ -98,7 +100,7 @@ class NH:
         LOG_DIR.mkdir(parents=True, exist_ok=True)
         rec = {"ts": datetime.now().isoformat(timespec="milliseconds"), "env": self.env, "path": path,
                "request": body, "status": status, "elapsed": elapsed, "attempt": attempt, "response": _mask(res)}
-        with open(LOG_DIR / f"{datetime.now():%Y%m%d}.jsonl", "a", encoding="utf-8") as f:
+        with open(LOG_DIR / LOG_NAME.format(datetime.now()), "a", encoding="utf-8") as f:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
     def call(self, path, body):
@@ -225,4 +227,4 @@ if __name__ == "__main__":
     t = nh.trend_investor()
     print("trend_investor: 외국인 순매수", t.get("frgn_net_buy"))
     print("토큰 만료 정보:", "expires_in 있음" if nh._token_until != float("inf") else "없음 (오류코드로만 재발급)")
-    print("로그:", LOG_DIR / f"{datetime.now():%Y%m%d}.jsonl")
+    print("로그:", LOG_DIR / LOG_NAME.format(datetime.now()))
