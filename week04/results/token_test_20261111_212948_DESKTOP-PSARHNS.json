@@ -1,0 +1,44 @@
+[
+  {
+    "host": "DESKTOP-PSARHNS"
+  },
+  {
+    "step": "A 발급",
+    "at": "2026-11-11T21:29:47.780",
+    "status": 200,
+    "expires_in": "86400",
+    "expires_at": "2026-11-12 11:34:43"
+  },
+  {
+    "step": "A로 조회",
+    "at": "2026-11-11T21:29:47.846",
+    "status": 200,
+    "code": null,
+    "msg": null
+  },
+  {
+    "step": "B 발급",
+    "at": "2026-11-11T21:29:48.040",
+    "status": 200,
+    "expires_in": "86400",
+    "expires_at": "2026-11-12 11:34:43"
+  },
+  {
+    "step": "A와 B가 같은 토큰인가",
+    "same": true
+  },
+  {
+    "step": "B 발급 후, A로 조회",
+    "at": "2026-11-11T21:29:48.122",
+    "status": 200,
+    "code": null,
+    "msg": null
+  },
+  {
+    "step": "B 발급 후, B로 조회",
+    "at": "2026-11-11T21:29:48.219",
+    "status": 200,
+    "code": null,
+    "msg": null
+  }
+]
