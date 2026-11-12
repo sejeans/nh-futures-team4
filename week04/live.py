@@ -19,6 +19,7 @@ from fetch_bars import KTB3, KTB10, RESULTS, _nh, fetch, load
 STATE = RESULTS / "live_state.json"
 DRY, YES = "--dry" in sys.argv, "--yes" in sys.argv
 END_TM = "15:34"
+ORDER_DEADLINE = "15:30:30"  # 이후엔 주문하지 않는다. 값은 임의 [확인 필요: 모의 시장가 접수 마감]
 
 
 def journal(rec):
@@ -77,6 +78,9 @@ def send(nh, sym, qty_signed, why):
         return True
     if not YES and input(f">>> {msg}. y: ").strip().lower() != "y":
         journal({"event": "주문 취소(사용자)", "msg": msg})
+        return False
+    if datetime.now().strftime("%H:%M:%S") > ORDER_DEADLINE:  # 11/12 15:31:06 마감 후 주문 사례
+        journal({"event": "주문 생략(마감 후)", "msg": msg})
         return False
     before = nh.position(sym)[0]
     try:
