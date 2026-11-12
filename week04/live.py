@@ -19,6 +19,7 @@ from fetch_bars import KTB3, KTB10, RESULTS, _nh, fetch, load
 STATE = RESULTS / "live_state.json"
 DRY, YES = "--dry" in sys.argv, "--yes" in sys.argv
 END_TM = "15:34"
+FILL_TRIES = 60  # 주문내역 조회 간격 1초. 11/12 ord 974는 체결까지 30초
 ORDER_DEADLINE = "15:30:30"  # 이후엔 주문하지 않는다. 값은 임의 [확인 필요: 모의 시장가 접수 마감]
 
 
@@ -63,6 +64,15 @@ def broker_pos(nh):
     return {s: nh.position(s)[0] for s in (KTB3, KTB10)}
 
 
+def open_qty(nh, ord_no):
+    """주문내역의 미체결 잔량(occurs1_rem_ord_qty). 거부·취소·체결 완료면 0"""
+    key = str(ord_no).strip().lstrip("0")
+    for r in nh.order_history().get("Occurs1") or []:
+        if r.get("occurs1_ord_no", "").strip().lstrip("0") == key:
+            return 0 if (r.get("occurs1_ord_rejt_rsn") or "").strip() else int(float(r.get("occurs1_rem_ord_qty") or 0))
+    return 0
+
+
 def target(side):
     return {KTB3: side * S.RATIO[0], KTB10: -side * S.RATIO[1]}
 
@@ -85,10 +95,15 @@ def send(nh, sym, qty_signed, why):
     before = nh.position(sym)[0]
     try:
         res = nh.order(side, qty=qty, sym=sym)
-        fill = nh.find_fill(res["ord_no"])
+        fill = nh.find_fill(res["ord_no"], tries=FILL_TRIES)
         journal({"event": "주문", "msg": msg, "res": res, "fill": fill})
         if fill and not fill["reject"] and fill["qty"] >= qty:
             return True
+        left = open_qty(nh, res["ord_no"])
+        if left:  # 11/12 ord 974: 30초 미접수 후 체결. 실패로 보고 넘어가면 잔고와 기록이 어긋난다
+            journal({"event": "중단", "msg": f"{msg} 잔량 {left} 미체결. 주문내역·잔고를 직접 확인",
+                     "pos": broker_pos(nh)})
+            sys.exit(1)
     except _nh.OrderUnknown as e:
         journal({"event": "주문 응답 없음", "msg": msg, "err": str(e)})
         time.sleep(3)
