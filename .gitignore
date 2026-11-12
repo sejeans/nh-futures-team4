@@ -13,3 +13,6 @@ nh-futures-team4_review_and_fixes/
 nh-futures-team4_review_and_fixes.zip
 손실_원인_분석.md
 수익률대회_QA.md
+
+# run_live.bat 의 git 출력 (git 이 추적하는 live_console.log 를 열어 둔 채 git 이 돌면 unlink 오류, 11/12)
+week04/results/git_push.log

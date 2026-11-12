@@ -20,8 +20,10 @@ ping -n 61 127.0.0.1 > nul
 goto run
 :push
 rem Upload today's results so the work PC only needs git pull. This PC commits results\ only (see run log rules)
+rem git output goes to an untracked file: git cannot replace live_console.log while it is open (11/12 unlink error)
 echo [%date% %time%] git push results >> results\live_console.log
-git add results >> results\live_console.log 2>&1
-git commit -q -m "auto: week04 live results %date%" >> results\live_console.log 2>&1
-git pull --rebase --autostash -q >> results\live_console.log 2>&1
-git push -q >> results\live_console.log 2>&1
+echo [%date% %time%] git push results >> results\git_push.log
+git add results >> results\git_push.log 2>&1
+git commit -q -m "auto: week04 live results %date%" >> results\git_push.log 2>&1
+git pull --rebase --autostash -q >> results\git_push.log 2>&1
+git push -q >> results\git_push.log 2>&1
