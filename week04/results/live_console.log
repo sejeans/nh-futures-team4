@@ -986,3 +986,9 @@ Already up to date.
 {"t": "2026-11-12T15:31:08", "event": "첫 다리 실패", "why": "진입"}
 {"t": "2026-11-12T15:31:08", "event": "끝", "state": null, "broker": {"A656C000": 0, "A676C000": 0}}
 [2026-11-12 15:31:08.40] git push results 
+warning: in the working copy of 'week04/results/live_console.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'week04/results/live_console.log', LF will be replaced by CRLF the next time Git touches it
+error: unable to unlink old 'week04/results/live_console.log': Invalid argument
+fatal: could not reset --hard
+Created autostash: d7c456e
+fatal: unable to access 'https://github.com/sejeans/nh-futures-team4.git/': Failed to connect to github.com:443 after 4 ms: Could not connect to server
