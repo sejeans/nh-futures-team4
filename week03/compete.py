@@ -35,7 +35,34 @@ def target(hm, start, end, side, qty, st):
     return side * qty
 
 
+def rem_qty(rows, ord_no):
+    """주문내역에서 그 주문의 미체결 잔량. 거부(9)는 0, 내역에 아직 없으면 None"""
+    key = str(ord_no).strip().lstrip("0")
+    for r in rows:
+        if r.get("occurs1_ord_no", "").strip().lstrip("0") == key:
+            return 0 if r.get("occurs1_ord_sts", "").strip() == "9" else int(float(r.get("occurs1_ord_rem_qty") or 0))
+    return None
+
+
+def filled_since(rows, day, start):
+    """오늘 start 이후 ZN 체결이 있었나. 상태 파일 없이(다른 PC) 재시작해도 진입했던 걸 안다"""
+    hhmm = start.replace(":", "")
+    return any(r.get("occurs1_sym", "").strip() == ZN and r.get("occurs1_ord_dt") == day
+               and r.get("occurs1_ord_rcv_tm", "")[8:12] >= hhmm and float(r.get("occurs1_exec_qty") or 0) > 0
+               for r in rows)
+
+
 def selfcheck():
+    # 11/11 리허설 주문내역 실제 행(634는 접수 직후 미체결 순간, 553은 전체체결)
+    rows = [{"occurs1_ord_no": "0000000634", "occurs1_ord_sts": "3", "occurs1_ord_rem_qty": "0000024",
+             "occurs1_sym": "ZNZ26", "occurs1_ord_dt": "20261111", "occurs1_ord_rcv_tm": "20261111175500",
+             "occurs1_exec_qty": "0000000"},
+            {"occurs1_ord_no": "0000000553", "occurs1_ord_sts": "6", "occurs1_ord_rem_qty": "0000000",
+             "occurs1_sym": "ZNZ26", "occurs1_ord_dt": "20261111", "occurs1_ord_rcv_tm": "20261111150004",
+             "occurs1_exec_qty": "0000024"}]
+    assert rem_qty(rows, "634") == 24 and rem_qty(rows, "0000000553") == 0 and rem_qty(rows, "1") is None
+    assert filled_since(rows, "20261111", "15:00") and not filled_since(rows, "20261111", "15:01")
+    assert not filled_since(rows, "20261112", "15:00")
     t = TICK
     assert stop_hit(-1, 107.0, 107.0 + 10 * t, 10) and not stop_hit(-1, 107.0, 107.0 + 9 * t, 10)
     assert stop_hit(1, 107.0, 107.0 - 10 * t, 10) and not stop_hit(1, 107.0, 107.0 + 30 * t, 10)
@@ -65,6 +92,8 @@ def main():
     ap.add_argument("--dry", action="store_true")
     a = ap.parse_args()
     selfcheck()
+    if STOP_FILE.exists() and datetime.fromtimestamp(STOP_FILE.stat().st_mtime).date() < datetime.now().date():
+        return print(f"{STOP_FILE} 가 예전 날짜에 만들어져 남아 있다. 이대로면 진입하지 않는다. 지우고 다시 실행")
 
     nh = NHOverseas()
     today = f"{datetime.now():%Y%m%d}"
@@ -76,7 +105,8 @@ def main():
             f.write(json.dumps(rec, ensure_ascii=False, default=str) + "\n")
         print(f"[{rec['at'][11:19]}] {event} {json.dumps(_nh._mask(kw), ensure_ascii=False, default=str)[:300]}", flush=True)
 
-    st = {"date": today, "side": None, "entry": None, "entered": False, "stopped": False, "done": False}
+    st = {"date": today, "side": None, "entry": None, "entered": False, "stopped": False, "done": False,
+          "last_ord": None}
     if STATE.exists():
         old = json.loads(STATE.read_text(encoding="utf-8"))
         if old.get("date") == today:
@@ -117,6 +147,17 @@ def main():
                 time.sleep(LOOP_SEC)
                 continue
             pos, avg = nh.position(ZN)
+            if st.get("last_ord"):  # 직전 주문 잔량이 남았으면 새 주문도, 종료도 하지 않는다 (11/12 국내 ord 974 늦은 체결)
+                left = rem_qty(nh.order_history(), st["last_ord"])
+                if left != 0:
+                    log("직전 주문 미체결: 대기", ord_no=st["last_ord"], rem=left, pos=pos)
+                    time.sleep(LOOP_SEC)
+                    continue
+                st["last_ord"] = None
+                keep()
+            if not st["entered"] and (pos or filled_since(nh.order_history(), today, a.start)):
+                st["entered"] = True
+                keep()
             if pos and st["entry"] is None:
                 st["entry"] = avg
                 keep()
@@ -128,7 +169,7 @@ def main():
             q = nh.price(ZN)
             last = float(q["occurs1_last_pric"])
             px = float(q["occurs1_bid_pric" if pos > 0 else "occurs1_ask_pric"]) if pos else last
-            if pos and st["entry"] and not st["stopped"] and stop_hit(side, st["entry"], px, a.stop):
+            if pos and px > 0 and st["entry"] and not st["stopped"] and stop_hit(side, st["entry"], px, a.stop):
                 st["stopped"] = True
                 keep()
                 log("손절", entry=st["entry"], px=px, ticks=round((px - st["entry"]) * side / TICK, 2))
@@ -162,10 +203,11 @@ def main():
                 continue
             fill = nh.find_fill(res["ord_no"])
             log("체결", ord_no=res["ord_no"], fill=fill)
+            st["last_ord"] = res["ord_no"]
             if tgt != 0:
                 st["entered"] = True
                 st["entry"] = None  # 다음 바퀴에 증권사 잔고 평균가로 채운다
-                keep()
+            keep()
             for _ in range(15):  # 잔고 반영을 기다린다. 반영 전에 다시 돌면 같은 주문을 또 낸다
                 if nh.position(ZN)[0] != pos:
                     break
