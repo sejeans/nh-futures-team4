@@ -194,7 +194,7 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant U as 세진
+    participant U as 사용자
     participant T as trend_live.py
     participant N as NH선물 모의 서버
     T->>N: 18:44:41 연결 일봉 조회 (chart-daily)
