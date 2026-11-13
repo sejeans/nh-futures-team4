@@ -16,3 +16,9 @@ nh-futures-team4_review_and_fixes.zip
 
 # run_live.bat 의 git 출력 (git 이 추적하는 live_console.log 를 열어 둔 채 git 이 돌면 unlink 오류, 11/12)
 week04/results/git_push.log
+
+# 모의투자대회·발표 자료 — 저장소에 올리지 않는다 (11/13)
+모의투자대회/
+week04/slides/
+week03/compete.py
+week03/results/compete_*
