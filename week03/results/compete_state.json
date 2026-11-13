@@ -1,8 +1,9 @@
 {
-  "date": "20261111",
+  "date": "20261113",
   "side": -1,
-  "entry": 106.03125,
-  "entered": false,
+  "entry": 105.3125,
+  "entered": true,
   "stopped": false,
-  "done": true
+  "done": false,
+  "last_ord": null
 }
