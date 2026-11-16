@@ -20,7 +20,7 @@ Thumbs.db
 desktop.ini
 *.tmp
 
-# ---- Claude Code 개인 설정 (MCP 서버 승인 등) ----
+# ---- Claude Code 개인 설정 ----
 .claude/settings.local.json
 
 # ---- 개인 자료: 팀 저장소(공개)에 올리지 않는다 ----
@@ -44,7 +44,7 @@ week03/results/compete_*
 # ---- 실행 중에만 쓰는 로컬 파일 ----
 # run_live.bat 의 git 출력 (git 이 추적하는 live_console.log 를 열어 둔 채 git 이 돌면 unlink 오류, 11/12)
 **/results/git_push.log
-# 비상 정지 스위치 (week03/STOP, final/results/HALT). 저장소에 올라가면 다른 PC 의 프로그램까지 멈춘다
+# 비상 정지 스위치 (week03/STOP 등). 저장소에 올라가면 다른 PC 의 프로그램까지 멈춘다
 **/STOP
 **/HALT
 
