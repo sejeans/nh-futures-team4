@@ -1,0 +1,204 @@
+{
+ "split": {
+  "fit": [
+   "2022-01-01",
+   "2023-12-31"
+  ],
+  "val": [
+   "2024-01-01",
+   "2024-12-31"
+  ],
+  "test": [
+   "2025-01-01",
+   "2026-11-13"
+  ]
+ },
+ "n": {
+  "fit": 492,
+  "test": 454,
+  "val": 244
+ },
+ "quality": {
+  "ktb_daily_days": 1192,
+  "ktb_daily_range": [
+   "2021-12-27",
+   "2026-11-16"
+  ],
+  "ohlc_out_of_range_days": 0,
+  "max_calendar_gap_days": 8,
+  "rebuilt_vs_daily_days": 42,
+  "rebuilt_vs_daily_mismatch": {
+   "open": 3,
+   "high": 3,
+   "low": 3,
+   "close": 3
+  }
+ },
+ "H1_gap_on_zn": {
+  "n": 574,
+  "r2": 0.5675,
+  "coef": {
+   "const": 0.003,
+   "zret": 0.5568
+  },
+  "t": {
+   "const": 0.33,
+   "zret": 17.59
+  }
+ },
+ "H2_intra_on_zn": {
+  "n": 584,
+  "r2": 0.0076,
+  "coef": {
+   "const": 0.0007,
+   "zret": -0.0634
+  },
+  "t": {
+   "const": 0.06,
+   "zret": -2.07
+  }
+ },
+ "H2_intra_on_gfit_gres": {
+  "n": 574,
+  "r2": 0.0068,
+  "coef": {
+   "const": -0.0034,
+   "gfit": -0.1071,
+   "gres": -0.0072
+  },
+  "t": {
+   "const": -0.28,
+   "gfit": -1.93,
+   "gres": -0.08
+  }
+ },
+ "H3_intra_on_prev": {
+  "n": 736,
+  "r2": 0.0245,
+  "coef": {
+   "const": 0.0177,
+   "prev_intra": -0.1566
+  },
+  "t": {
+   "const": 1.28,
+   "prev_intra": -4.05
+  }
+ },
+ "H3_by_year": {
+  "2021": {
+   "n": 3,
+   "corr": -0.69
+  },
+  "2022": {
+   "n": 246,
+   "corr": -0.16
+  },
+  "2023": {
+   "n": 243,
+   "corr": -0.156
+  },
+  "2024": {
+   "n": 244,
+   "corr": -0.136
+  }
+ },
+ "H3_by_vol_regime": {
+  "변동성 높음": {
+   "n": 357,
+   "corr": -0.164
+  },
+  "변동성 낮음": {
+   "n": 359,
+   "corr": -0.174
+  }
+ },
+ "minute_leadlag": {
+  "1min": {
+   "n": 16302,
+   "corr_by_lag": {
+    "-3": -0.0,
+    "-2": 0.007,
+    "-1": 0.057,
+    "0": 0.351,
+    "1": 0.006,
+    "2": -0.016,
+    "3": 0.013
+   }
+  },
+  "5min": {
+   "n": 3318,
+   "corr_by_lag": {
+    "-3": -0.021,
+    "-2": -0.01,
+    "-1": 0.045,
+    "0": 0.519,
+    "1": 0.029,
+    "2": 0.014,
+    "3": -0.005
+   }
+  },
+  "period": [
+   "2026-09-11",
+   "2026-11-13"
+  ]
+ },
+ "models": [
+  {
+   "model": "A 전일 장중",
+   "coef": {
+    "prev_intra": -0.1584
+   },
+   "val_n": 244,
+   "val_corr": 0.136,
+   "val_hit": 0.553,
+   "val_krw_per_day": 10892
+  },
+  {
+   "model": "B 전일 장중 + ZN",
+   "coef": {
+    "prev_intra": -0.154,
+    "zret": -0.0762
+   },
+   "val_n": 236,
+   "val_corr": 0.061,
+   "val_hit": 0.542,
+   "val_krw_per_day": 10442
+  },
+  {
+   "model": "C 전일 장중 + ZN + 갭",
+   "coef": {
+    "prev_intra": -0.1761,
+    "zret": -0.0336,
+    "gap": -0.0549
+   },
+   "val_n": 232,
+   "val_corr": 0.09,
+   "val_hit": 0.543,
+   "val_krw_per_day": 3805
+  },
+  {
+   "model": "D 갭",
+   "coef": {
+    "gap": -0.0905
+   },
+   "val_n": 240,
+   "val_corr": -0.004,
+   "val_hit": 0.467,
+   "val_krw_per_day": -14392
+  },
+  {
+   "model": "E ZN",
+   "coef": {
+    "zret": -0.0986
+   },
+   "val_n": 236,
+   "val_corr": -0.069,
+   "val_hit": 0.441,
+   "val_krw_per_day": -34219
+  }
+ ],
+ "final_beta": -0.155,
+ "final_beta_t": -4.25,
+ "intra_abs_median_pt": 0.23,
+ "range_median_pt": 0.51
+}

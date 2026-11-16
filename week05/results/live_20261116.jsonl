@@ -1,0 +1,24 @@
+{"t": "2026-11-16T10:37:16", "event": "시작", "dry": true, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": 0, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:37:16", "event": "끝", "msg": "오늘 진입 없음", "side": 0, "q": {"last": 108.17, "bid": 108.17, "ask": 108.18}}
+{"t": "2026-11-16T10:37:30", "event": "시작", "dry": true, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": -1, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:37:31", "event": "주문(드라이런)", "msg": "진입: A676C000 시장가 매도 1", "px": 108.16}
+{"t": "2026-11-16T10:37:31", "event": "진입", "state": {"day": "20261116", "side": -1, "entry_px": 108.16, "entry_t": "10:37:30", "prev_intra": 0.08, "stop_px": 108.66}, "q": {"last": 108.17, "bid": 108.16, "ask": 108.17}}
+{"t": "2026-11-16T10:37:31", "event": "틱", "q": {"last": 108.17, "bid": 108.16, "ask": 108.17}, "side": -1, "entry_px": 108.16, "unreal_krw": -10000}
+{"t": "2026-11-16T10:38:01", "event": "틱", "q": {"last": 108.17, "bid": 108.16, "ask": 108.18}, "side": -1, "entry_px": 108.16, "unreal_krw": -10000}
+{"t": "2026-11-16T10:39:01", "event": "틱", "q": {"last": 108.16, "bid": 108.16, "ask": 108.17}, "side": -1, "entry_px": 108.16, "unreal_krw": 0}
+{"t": "2026-11-16T10:40:11", "event": "시작", "dry": true, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": 1, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:40:11", "event": "주문(드라이런)", "msg": "진입: A676C000 시장가 매수 1", "px": 108.12}
+{"t": "2026-11-16T10:40:11", "event": "진입", "state": {"day": "20261116", "side": 1, "entry_px": 108.12, "entry_t": "10:40:11", "prev_intra": 0.08, "stop_px": 107.62}, "q": {"last": 108.11, "bid": 108.11, "ask": 108.12}}
+{"t": "2026-11-16T10:40:11", "event": "틱", "q": {"last": 108.11, "bid": 108.11, "ask": 108.12}, "side": 1, "entry_px": 108.12, "unreal_krw": -10000}
+{"t": "2026-11-16T10:40:11", "event": "주문(드라이런)", "msg": "시간 청산: A676C000 시장가 매도 1", "px": 108.11}
+{"t": "2026-11-16T10:40:11", "event": "청산", "reason": "시간 청산", "entry": {"day": "20261116", "side": 1, "entry_px": 108.12, "entry_t": "10:40:11", "prev_intra": 0.08, "stop_px": 107.62}, "exit_px": 108.11, "pnl_krw_after_cost": -27100}
+{"t": "2026-11-16T10:40:11", "event": "끝", "broker": null}
+{"t": "2026-11-16T10:40:12", "event": "시작", "dry": true, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": 1, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:40:12", "event": "주문(드라이런)", "msg": "진입: A676C000 시장가 매수 1", "px": 108.11}
+{"t": "2026-11-16T10:40:12", "event": "진입", "state": {"day": "20261116", "side": 1, "entry_px": 108.11, "entry_t": "10:40:12", "prev_intra": 0.08, "stop_px": 107.61}, "q": {"last": 108.11, "bid": 108.1, "ask": 108.11}}
+{"t": "2026-11-16T10:40:12", "event": "틱", "q": {"last": 108.11, "bid": 108.1, "ask": 108.11}, "side": 1, "entry_px": 108.11, "unreal_krw": 0}
+{"t": "2026-11-16T10:40:12", "event": "주문(드라이런)", "msg": "손절: A676C000 시장가 매도 1", "px": 108.1}
+{"t": "2026-11-16T10:40:12", "event": "청산", "reason": "손절", "entry": {"day": "20261116", "side": 1, "entry_px": 108.11, "entry_t": "10:40:12", "prev_intra": 0.08, "stop_px": 107.61}, "exit_px": 108.1, "pnl_krw_after_cost": -27100}
+{"t": "2026-11-16T10:40:12", "event": "끝", "broker": null}
+{"t": "2026-11-16T10:53:41", "event": "시작", "dry": false, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": 0, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:53:41", "event": "끝", "msg": "오늘 진입 없음", "side": 0, "q": {"last": 108.13, "bid": 108.13, "ask": 108.14}}

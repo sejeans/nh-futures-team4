@@ -22,3 +22,20 @@ week04/results/git_push.log
 week04/slides/
 week03/compete.py
 week03/results/compete_*
+
+# 5주차: ZN 1분봉 원본(36MB)은 올리지 않는다. 샘플 results/sample_ZNZ26_1m_20261113.csv 와 fetch_data.py 로 다시 받는다
+week05/results/bars_ZNZ26_1m_*.json
+week05/results/git_push.log
+# 11/16 수집일 API 로그(34MB)는 대부분 위 ZN 1분봉 응답 원본이라 올리지 않는다. 호출 수는 week05/README.md 4절
+week05/results/api_log/20261116_sejeans.jsonl
+
+# 로컬 파이썬 가상환경 (uv, python 3.12)
+.venv/
+
+# Claude Code 개인 설정 (MCP 서버 승인 등)
+.claude/settings.local.json
+
+# 11/13 23시 ZN 1분봉 수집 응답 원본(433MB, GitHub 100MB 제한 초과). 5주차 fetch_data.py 로 다시 받는다
+week03/results/api_log/20261113_sejeans_bars.jsonl
+# 최종 프로젝트 주제 검토 메모 (개인)
+최종프로젝트_아이디어.md

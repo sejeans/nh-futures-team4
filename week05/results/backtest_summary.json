@@ -1,0 +1,91 @@
+{
+ "rule": {
+  "BETA": -0.155,
+  "MIN_PREV": 0.11,
+  "STOP_PT": 0.5,
+  "COST_PT": 0.0171
+ },
+ "by_split": {
+  "fit": {
+   "days": 492,
+   "trades": 396,
+   "long": 187,
+   "short": 209,
+   "hit": 0.571,
+   "total_krw": 26718400,
+   "per_trade_krw": 67470,
+   "stopped": 75,
+   "sharpe_annual": 2.19,
+   "max_drawdown_krw": -4018900
+  },
+  "val": {
+   "days": 244,
+   "trades": 159,
+   "long": 67,
+   "short": 92,
+   "hit": 0.547,
+   "total_krw": 1171100,
+   "per_trade_krw": 7365,
+   "stopped": 7,
+   "sharpe_annual": 0.38,
+   "max_drawdown_krw": -3160300
+  },
+  "test": {
+   "days": 454,
+   "trades": 327,
+   "long": 170,
+   "short": 157,
+   "hit": 0.517,
+   "total_krw": 2538300,
+   "per_trade_krw": 7762,
+   "stopped": 35,
+   "sharpe_annual": 0.33,
+   "max_drawdown_krw": -5352100
+  }
+ },
+ "test_by_year": {
+  "2025": {
+   "days": 242,
+   "trades": 162,
+   "long": 88,
+   "short": 74,
+   "hit": 0.506,
+   "total_krw": 2989800,
+   "per_trade_krw": 18455,
+   "stopped": 13,
+   "sharpe_annual": 0.79,
+   "max_drawdown_krw": -3145900
+  },
+  "2026": {
+   "days": 212,
+   "trades": 165,
+   "long": 82,
+   "short": 83,
+   "hit": 0.527,
+   "total_krw": -451500,
+   "per_trade_krw": -2736,
+   "stopped": 22,
+   "sharpe_annual": -0.12,
+   "max_drawdown_krw": -4997600
+  }
+ },
+ "baselines_test": {
+  "매일 매수": {
+   "trades": 454,
+   "total_krw": -16603400,
+   "hit": 0.456
+  },
+  "전일 방향 추종(같은 기준)": {
+   "trades": 327,
+   "total_krw": -13671699,
+   "hit": 0.45
+  }
+ },
+ "minute_window": {
+  "days": 34,
+  "live_total_krw": 408600,
+  "daily_total_krw": 638600,
+  "same_sign_days": 31,
+  "corr": 0.928
+ }
+}

@@ -1,0 +1,4 @@
+[2026-11-16 10:53:40.80] start, ..\.venv\Scripts\python.exe 
+{"t": "2026-11-16T10:53:41", "event": "시작", "dry": false, "prev_bar": {"day": "20261113", "open": 108.02, "close": 108.1}, "prev_intra": 0.08, "side": 0, "pred_pt": -0.0124, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-16T10:53:41", "event": "끝", "msg": "오늘 진입 없음", "side": 0, "q": {"last": 108.13, "bid": 108.13, "ask": 108.14}}
+[2026-11-16 10:53:41.79] end 

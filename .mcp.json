@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nh-futures": {
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-X", "utf8", "final/src/nh_mcp.py"]
+    }
+  }
+}
