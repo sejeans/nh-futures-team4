@@ -20,3 +20,6 @@ ping -n 61 127.0.0.1 > nul
 goto run
 :end
 echo [%date% %time%] end >> results\live_console.log
+rem Open a new console with today's fills, position and deposit for the screenshots/ capture (read-only, no orders).
+rem The window stays open (cmd /k). Task runs only while logged on, so the window appears on the desktop.
+start "NH account" cmd /k %PY% -X utf8 show_account.py

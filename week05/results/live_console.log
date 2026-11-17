@@ -401,3 +401,7 @@
 {"t": "2026-11-17T15:30:02", "event": "청산", "reason": "시간 청산", "entry": {"day": "20261117", "side": -1, "entry_px": 108.43, "entry_t": "09:00:02", "prev_intra": 0.24, "stop_px": 108.93}, "exit_px": 108.44, "pnl_krw_after_fee_est": -17100}
 {"t": "2026-11-17T15:30:02", "event": "끝", "broker": [0, null]}
 [2026-11-17 15:30:02.49] end 
+[2026-11-17 17:04:31.36] start, ..\.venv\Scripts\python.exe 
+{"t": "2026-11-17T17:04:32", "event": "시작", "dry": false, "prev_bar": {"day": "20261116", "open": 108.11, "close": 108.35}, "prev_intra": 0.24, "side": -1, "pred_pt": -0.0372, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": null, "broker": 0}
+{"t": "2026-11-17T17:04:32", "event": "끝", "msg": "오늘 진입 없음", "side": -1, "q": {"last": 108.49, "bid": 108.46, "ask": 108.49}}
+[2026-11-17 17:04:32.26] end 

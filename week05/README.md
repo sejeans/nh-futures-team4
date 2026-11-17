@@ -194,6 +194,7 @@ ZN을 추가하면 검증 성과가 하락했고, ZN과 갭만으로는 손실�
 | 09:00\~15:30 | 1분마다 현재가 조회, 손절가 도달 시 시장가 청산 |
 | 15:30 | 시장가 청산. 15:44까지는 늦게 켜져도 청산 주문을 낸다 |
 | 종료 | `results/live_YYYYMMDD.jsonl`에 시세, 신호, 주문, 체결을 기록. 콘솔 출력은 `results/live_console.log` |
+| 종료 직후 | 새 콘솔 창에서 [show_account.py](show_account.py)로 당일 체결내역, 잔고, 예수금을 조회해 표시(11/18부터). 이 화면을 `screenshots/`에 캡처 |
 
 재시작 처리: 오류로 종료되면 1분 간격으로 최대 5회 재실행한다. 재시작 시 `live_state.json`에 보유가 있으면 이어서 손절과 청산만 처리하고, 09:15 이후에는 새로 진입하지 않는다. 전일 보유가 남아 있으면 시작 직후 정리한다.
 
@@ -329,7 +330,7 @@ ZN 연결 일봉의 2022-06\~2023-01 결측은 3주차에 제보했고 운영진
 | [strategy.py](strategy.py) | 확정 규칙과 상수. 백테스트와 실전이 공통으로 사용 (`selfcheck` 포함) |
 | [backtest.py](backtest.py) | 일봉 백테스트(학습, 검증, 시험), 손절 폭 비교(`--stops`), 실전 시각 1분봉 비교 |
 | [live.py](live.py) | 실전(모의) 실행. `--dry` 주문 없음, `--yes` 확인 입력 없음 |
-| [run_live.bat](run_live.bat) | 작업 스케줄러용. 오류 시 최대 5회 재실행. 4주차와 달리 PC 한 대에서 실행하므로 `git pull`, `push` 단계를 제외 |
+| [run_live.bat](run_live.bat) | 작업 스케줄러용. 오류 시 최대 5회 재실행. 4주차와 달리 PC 한 대에서 실행하므로 `git pull`, `push` 단계를 제외. 종료 후 `show_account.py` 창을 연다 |
 | [plot_analysis.py](plot_analysis.py) | README 차트 (`results/fig_*.png`). 저장된 파일만 사용 |
 | [repro_errors.py](repro_errors.py) | 7절 4, 5번 제보 재현. 조회만 하고 주문하지 않음 |
 | [show_account.py](show_account.py) | 당일 체결내역, 잔고, 예수금 조회와 출력(`screenshots/` 캡처용). 조회만 하고 주문하지 않음. 원본은 `results/account_*.json` |
