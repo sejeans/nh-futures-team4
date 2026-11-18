@@ -3,6 +3,7 @@
 # 당일 주문내역 API는 지난 날짜를 조회할 수 없으므로 그날 안에 실행해야 한다
 # 원본 응답은 results/account_YYYYMMDD_HHMMSS.json 에 남긴다 (계좌번호 등은 마스킹)
 import json
+import time
 from datetime import datetime
 
 from fetch_data import RESULTS, _nh
@@ -26,12 +27,23 @@ def tm(s):  # "153001783" -> "15:30:01.783"
     return f"{s[:2]}:{s[2:4]}:{s[4:6]}.{s[6:9]}" if len(s) >= 6 else s
 
 
+def safe(f, tries=3):
+    """11/18 09:00:03 order-history가 400 EGW009(계좌번호가 잘못되었습니다)를 한 번 냈고, 16:50 재조회는 정상이었다.
+    일시 오류로 보고 10초 간격으로 다시 묻는다. 끝내 실패하면 빈 응답으로 두고 나머지 표는 계속 찍는다"""
+    for i in range(tries):
+        try:
+            return f()
+        except _nh.NHError as e:
+            print(f"[{f.__name__} 실패 {i + 1}/{tries}] {e}")
+            if i + 1 < tries:
+                time.sleep(10)
+    return {}
+
+
 def main():
     nh = _nh.NH()
     now = datetime.now()
-    hist = nh.order_history()
-    bal = nh.open_interest()
-    dep = nh.deposit()
+    hist, bal, dep = (safe(f) for f in (nh.order_history, nh.open_interest, nh.deposit))
 
     print(f"NH선물 모의계좌 조회  {now:%Y-%m-%d %H:%M:%S}  (team-04, week05/show_account.py)")
     print()
