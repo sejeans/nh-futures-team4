@@ -36,7 +36,7 @@ class NHOverseas(_nh.NH):
 
     # --- 시세 ---
     def price(self, sym=ZN):
-        # 한 번에 한 종목만. Iccurs1 에 2종목을 넣으면 빈 응답이 온다 (2026-11-01, 오류 제보 후보)
+        # 한 번에 한 종목만. Iccurs1 에 2종목을 넣으면 빈 응답이 온다 (2026-11-01 확인, 11-17 운영진 답변: 1종목씩 요청이 정상)
         return self.call(P + "price", {"Iccurs1": [{"iccurs1_exch_cd": EXCH, "iccurs1_sym": sym}]})["Occurs1"][0]
 
     def chart_minute(self, sym=ZN, dcnt=5, req_qty=300, start="00000000", end="99999999", all_pages=False,
@@ -63,7 +63,11 @@ class NHOverseas(_nh.NH):
 
     # --- 계좌 ---
     def deposit(self, cur="USD", biz_dt=""):
-        return self.call(P + "deposit", {"biz_dt": biz_dt, "cur_cd": cur, "cvs_div": "1"})
+        # biz_dt를 빈 문자열로 보내면 400 ETR018. 당일 조회는 키 자체를 뺀다 (운영진 답변, 2026-11-17)
+        body = {"cur_cd": cur, "cvs_div": "1"}
+        if biz_dt:
+            body["biz_dt"] = biz_dt
+        return self.call(P + "deposit", body)
 
     def open_interest(self):
         return self.pages("open-interest", {})
