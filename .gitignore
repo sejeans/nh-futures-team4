@@ -56,3 +56,6 @@ week03/results/compete_*
 **/results/api_log/*_bars*.jsonl
 # 11/16 수집일 API 로그(34MB)는 대부분 ZN 1분봉 응답 원본. 호출 수는 week05/README.md 4절
 week05/results/api_log/20261116_sejeans.jsonl
+
+# ---- nhf 상태 파일: 토큰 캐시(비밀), 주문표, 계획 (final/.nhf/) ----
+**/.nhf/
