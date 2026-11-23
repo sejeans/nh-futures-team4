@@ -127,6 +127,8 @@ def main():
         journal({"event": "중단", "msg": f"잔고 {pos} ≠ 기록 {expect}. 직접 확인 후 live_state.json 을 고칠 것"})
         sys.exit(1)
     if state and state["day"] != today:  # 어제 청산하지 못한 보유. 바로 정리하고 오늘 신호는 따르지 않는다
+        while now_tm() < S.ENTRY_TM + ":00":  # 모의 국내 운영 09:00~. 08:50 에 주문하면 3회 실패하고 끝난다
+            time.sleep(5)
         close_out(nh, state, "전일 보유 정리", quote(nh))
         state, sd = None, 0
 

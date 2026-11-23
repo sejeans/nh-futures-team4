@@ -721,3 +721,9 @@
 {"t": "2026-11-20T14:00:01", "event": "틱", "q": {"last": 109.28, "bid": 109.28, "ask": 109.29}, "side": -1, "entry_px": 108.82, "unreal_krw": -460000}
 {"t": "2026-11-20T14:01:01", "event": "틱", "q": {"last": 109.29, "bid": 109.28, "ask": 109.29}, "side": -1, "entry_px": 108.82, "unreal_krw": -470000}
 {"t": "2026-11-20T14:02:02", "event": "틱", "q": {"last": 109.3, "bid": 109.3, "ask": 109.31}, "side": -1, "entry_px": 108.82, "unreal_krw": -480000}
+[2026-11-23  8:50:00.81] start, ..\.venv\Scripts\python.exe 
+{"t": "2026-11-23T08:50:02", "event": "시작", "dry": false, "prev_bar": {"day": "20261120", "open": 108.87, "close": 109.43}, "prev_intra": 0.56, "side": -1, "pred_pt": -0.0868, "rule": {"BETA": -0.155, "MIN_PREV": 0.11, "STOP_PT": 0.5}, "state": {"day": "20261120", "side": -1, "entry_px": 108.82, "en
+{"t": "2026-11-23T09:00:03", "event": "주문", "msg": "전일 보유 정리: A676C000 시장가 매수 1", "res": {"ord_no": "0000000068", "msg_cd": "", "msg_cntn": ""}, "fill": {"qty": 1.0, "px": 109.58, "status": "체결", "time": "090000932", "reject": ""}}
+{"t": "2026-11-23T09:00:03", "event": "청산", "reason": "전일 보유 정리", "entry": {"day": "20261120", "side": -1, "entry_px": 108.82, "entry_t": "09:00:04", "prev_intra": 0.21, "stop_px": 109.32}, "exit_px": 109.58, "pnl_krw_after_fee_est": -767100}
+{"t": "2026-11-23T09:00:03", "event": "끝", "msg": "오늘 진입 없음", "side": 0, "q": {"last": 109.58, "bid": 109.57, "ask": 109.58}}
+[2026-11-23  9:00:03.46] end 
