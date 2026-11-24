@@ -47,3 +47,21 @@ nh.NHError: 토큰 발급 실패 HTTP 429
 {"ts": "2026-11-23T15:15:10", "event": "exit", "reason": "반대 밴드", "trade": "1123 14:45", "side": -1, "lots": 1, "entry": 1066.3, "exit": 1050.3, "pnl": 157925, "pnl_today": 410693, "left": 0}
 {"ts": "2026-11-23T15:25:10", "event": "end", "why": "15:25", "pnl_today": 410693, "halt": null}
 [2026-11-23 15:25:10.45] end, exit 0 
+[2026-11-24  8:50:00.36] start, ..\.venv\Scripts\python.exe 
+{"ts": "2026-11-24T08:50:02", "event": "start", "dry": false, "rules": {"stop": true, "stop_touch": true, "limit": "worst", "lots": 2, "split": true}, "broker": 0, "state": {"day": "20261123", "side": 0, "lots": 0, "stage": 0, "entry_px": null, "entry_t": null, "trade": null, "halt": null, "pending"
+{"ts": "2026-11-24T11:10:10", "event": "order", "why": "진입", "side": 1, "qty": 2, "ord_no": "0000000361", "fill": {"qty": 2.0, "px": 1110.2, "status": "체결", "time": "111010462", "reject": ""}}
+{"ts": "2026-11-24T11:10:10", "event": "enter", "side": 1, "lots": 2, "px": 1110.2, "stop": 1102.5}
+{"ts": "2026-11-24T11:15:10", "event": "order", "why": "중심선", "side": -1, "qty": 1, "ord_no": "0000000366", "fill": {"qty": 1.0, "px": 1111.2, "status": "체결", "time": "111510442", "reject": ""}}
+{"ts": "2026-11-24T11:15:10", "event": "exit", "reason": "중심선", "trade": "1124 11:10", "side": 1, "lots": 1, "entry": 1110.2, "exit": 1111.2, "pnl": 7823, "pnl_today": 7823, "left": 1}
+{"ts": "2026-11-24T11:15:10", "event": "stop_moved", "trade": "1124 11:10", "stop": 1110.2}
+{"ts": "2026-11-24T11:15:20", "event": "order", "why": "본전", "side": -1, "qty": 1, "ord_no": "0000000367", "fill": {"qty": 1.0, "px": 1110.3, "status": "체결", "time": "111520186", "reject": ""}}
+{"ts": "2026-11-24T11:15:20", "event": "exit", "reason": "본전", "trade": "1124 11:10", "side": 1, "lots": 1, "entry": 1110.2, "exit": 1110.3, "pnl": -1177, "pnl_today": 6646, "left": 0}
+{"ts": "2026-11-24T12:15:10", "event": "order", "why": "진입", "side": 1, "qty": 2, "ord_no": "0000000453", "fill": {"qty": 2.0, "px": 1100.7, "status": "체결", "time": "121510314", "reject": ""}}
+{"ts": "2026-11-24T12:15:10", "event": "enter", "side": 1, "lots": 2, "px": 1100.7, "stop": 1093.0}
+{"ts": "2026-11-24T12:30:10", "event": "order", "why": "중심선", "side": -1, "qty": 1, "ord_no": "0000000480", "fill": {"qty": 1.0, "px": 1107.6, "status": "체결", "time": "123010231", "reject": ""}}
+{"ts": "2026-11-24T12:30:10", "event": "exit", "reason": "중심선", "trade": "1124 12:15", "side": 1, "lots": 1, "entry": 1100.7, "exit": 1107.6, "pnl": 66835, "pnl_today": 73481, "left": 1}
+{"ts": "2026-11-24T12:30:10", "event": "stop_moved", "trade": "1124 12:15", "stop": 1100.7}
+{"ts": "2026-11-24T15:16:10", "event": "order", "why": "본전", "side": -1, "qty": 1, "ord_no": "0000000689", "fill": {"qty": 1.0, "px": 1100.6, "status": "체결", "time": "151610158", "reject": ""}}
+{"ts": "2026-11-24T15:16:10", "event": "exit", "reason": "본전", "trade": "1124 12:15", "side": 1, "lots": 1, "entry": 1100.7, "exit": 1100.6, "pnl": -3158, "pnl_today": 70323, "left": 0}
+{"ts": "2026-11-24T15:25:10", "event": "end", "why": "15:25", "pnl_today": 70323, "halt": null}
+[2026-11-24 15:25:10.43] end, exit 0 
