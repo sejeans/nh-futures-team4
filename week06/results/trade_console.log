@@ -91,3 +91,12 @@ nh.NHError: 토큰 발급 실패 HTTP 429
 {"ts": "2026-11-26T11:51:10", "event": "exit", "reason": "손절", "trade": "1126 11:10", "side": 1, "lots": 2, "entry": 1109.4, "exit": 1101.6, "pnl": -160335, "pnl_today": -160335, "left": 0}
 {"ts": "2026-11-26T15:25:10", "event": "end", "why": "15:25", "pnl_today": -160335, "halt": null}
 [2026-11-26 15:25:10.41] end, exit 0 
+[2026-11-27  8:50:00.39] start, ..\.venv\Scripts\python.exe 
+{"ts": "2026-11-27T08:50:02", "event": "start", "dry": false, "rules": {"stop": true, "stop_touch": true, "limit": "worst", "lots": 2, "split": true}, "broker": 0, "state": {"day": "20261126", "side": 0, "lots": 0, "stage": 0, "entry_px": null, "entry_t": null, "trade": null, "halt": null, "pending"
+{"ts": "2026-11-27T13:55:10", "event": "order", "why": "진입", "side": -1, "qty": 2, "ord_no": "0000000713", "fill": {"qty": 2.0, "px": 1185.7, "status": "체결", "time": "135510326", "reject": ""}}
+{"ts": "2026-11-27T13:55:10", "event": "enter", "side": -1, "lots": 2, "px": 1185.7, "stop": 1193.4}
+{"ts": "2026-11-27T14:06:50", "event": "order", "why": "손절", "side": 1, "qty": 2, "ord_no": "0000000728", "fill": {"qty": 2.0, "px": 1194.4, "status": "체결", "time": "140649993", "reject": ""}}
+{"ts": "2026-11-27T14:06:50", "event": "exit", "reason": "손절", "trade": "1127 13:55", "side": -1, "lots": 2, "entry": 1185.7, "exit": 1194.4, "pnl": -178666, "pnl_today": -178666, "left": 0}
+{"ts": "2026-11-27T14:20:10", "event": "skip", "side": -1, "why": "일일 한도(다음 손절 포함)", "pnl_today": -178666}
+{"ts": "2026-11-27T15:25:10", "event": "end", "why": "15:25", "pnl_today": -178666, "halt": null}
+[2026-11-27 15:25:10.38] end, exit 0 
